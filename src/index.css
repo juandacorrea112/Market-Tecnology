@@ -88,3 +88,12 @@
         color: rgb(0, 0, 0);
         font-family: 'Chakra Petch';
    }
+
+
+/*CLASE GLOBAL PARA TITULOS*/
+
+.TittlePrinciple{
+     font-family: 'Chakra Petch';
+     font-size: 90px;
+     color: white;
+}

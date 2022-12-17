@@ -1,0 +1,22 @@
+.PatherBackgImg{
+    width: 100%;
+    height: auto;
+    background-image: url('../../../images/botBackground.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.PatherBackgImg .lentDarkandCont{
+    width: 100%;
+    height: 100vh;
+    /* height: auto; */
+    background-color: rgba(0, 0, 0, 0.801);
+}
+.lentDarkandCont .contTittleDestac{
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+.contTittleDestac h1{
+    font-size: 60px;
+    padding: 50px;
+}
