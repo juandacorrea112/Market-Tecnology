@@ -26,6 +26,13 @@ export const PagehomeUp = () => {
           <span className="buttotext">REGISTRARSE</span>
         </button>
 
+        <button className="BtnP SecondClasBtn">
+          <span className="circleMovil" aria-hidden="true">
+          <span className="icon arrow"></span>
+          </span>
+          <span className="buttotext">DESTACADOS</span>
+        </button>
+
       </div>
     </div>
   )
