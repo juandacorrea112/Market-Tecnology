@@ -1,0 +1,35 @@
+.ContPrinHomeUp{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../images/bannerEnter.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+.contTittleP{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.contTittleP .TextAcompa{
+    color: white;
+    font-family: 'Chakra Petch';
+    font-size: 27px;
+}
+.contTittleP .TittlePrinciple{
+    font-family: 'Chakra Petch';
+    font-size: 90px;
+    color: white;
+}
+.ContPrinHomeUp .contButtonsRs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
