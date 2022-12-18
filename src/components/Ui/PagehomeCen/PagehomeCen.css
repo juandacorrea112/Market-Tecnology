@@ -10,10 +10,17 @@
     height: 100vh;
     /* height: auto; */
     background-color: rgba(0, 0, 0, 0.801);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .lentDarkandCont .contTittleDestac{
     width: 100%;
     text-align: center;
+    height: auto;
+}
+.lentDarkandCont .contCards{
+    width: 100%;
     height: auto;
 }
 .contTittleDestac h1{

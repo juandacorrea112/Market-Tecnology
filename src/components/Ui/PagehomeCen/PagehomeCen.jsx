@@ -8,6 +8,11 @@ export const PagehomeCen = () => {
             <div className="contTittleDestac">
                 <h1 className='TittlePrinciple'>PRODUCTOS MAS DESTACADOS</h1>
             </div>
+            <div className="contCards">
+              <div className="card">
+                
+              </div>
+            </div>
         </div>
     </div>
   )
