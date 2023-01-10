@@ -21,6 +21,9 @@ export const PagehomeCen = () => {
                     facere incidunt obcaecati impedit est molestiae laborum quasi? Totam!</p>
                 </div>
               </div>
+
+              
+
             </div>
         </div>
     </div>
