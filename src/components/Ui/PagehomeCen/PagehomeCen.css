@@ -24,7 +24,8 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
+    gap: 100px;
 }
 .contTittleDestac h1{
     font-size: 60px;

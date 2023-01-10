@@ -22,7 +22,29 @@ export const PagehomeCen = () => {
                 </div>
               </div>
 
-              
+              <div className="card">
+                <div className="imgBox">
+                  <img src={pcProduct} alt="..." />
+                </div>
+                <div className="contentInfo">
+                  <h2>Pc de escritorio</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quidem corporis 
+                    commodi enim magni dolor tempora. Cupiditate totam, adipisci quod explicabo 
+                    facere incidunt obcaecati impedit est molestiae laborum quasi? Totam!</p>
+                </div>
+              </div>
+
+              <div className="card">
+                <div className="imgBox">
+                  <img src={pcProduct} alt="..." />
+                </div>
+                <div className="contentInfo">
+                  <h2>Pc de escritorio</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quidem corporis 
+                    commodi enim magni dolor tempora. Cupiditate totam, adipisci quod explicabo 
+                    facere incidunt obcaecati impedit est molestiae laborum quasi? Totam!</p>
+                </div>
+              </div>
 
             </div>
         </div>
