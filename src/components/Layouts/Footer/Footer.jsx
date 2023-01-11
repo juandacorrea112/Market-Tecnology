@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col" id='company'>
-            <img src={LogoFooter} alt="" />
+            <img className='imgFooter logo' src={LogoFooter} alt="" />
             <p>
               we are spacialized in desingnis, make your business a brand 
               try our premium servicies.
@@ -24,8 +24,8 @@ export const Footer = () => {
           </div>
 
           <div className="col" id='services'>
-            <h3>Services</h3>
-            <div className="links">
+            <h3>Servicios</h3>
+            <div className="Links">
               <a href="#">Ilustration</a>
               <a href="#">Creatives</a>
               <a href="#">Poster Desing</a>
@@ -34,8 +34,8 @@ export const Footer = () => {
           </div>
 
           <div className="col" id='useful-links'>
-            <h3>Links</h3>
-            <div className="Link">
+            <h3>Enlaces</h3>
+            <div className="Links">
               <a href="#">About</a>
               <a href="#">Services</a>
               <a href="#">Our Policy</a>
@@ -44,17 +44,27 @@ export const Footer = () => {
           </div>
 
           <div className="col" id='contact'>
-            <h3>Contact</h3>
+            <h3>Contacto</h3>
             <div className="contact-details">
               <i className='fafa-location'></i>
-              <p>FF-42 Procube Avanue, <br/> NY, USA</p>
+              <p>FF-42 Procube Avanue, <br/> NY, COL</p>
             </div>
             <div className="contact-details">
               <i className='fafa-phone'></i>
-              <p>+1-8755856858</p>
+              <p>Redes sociales establecidas</p>
             </div>
           </div>
         </div>
+
+        <div className="row">
+          <div className="form">
+            <form action="">
+              <input type="text" placeholder='Enviar email ...' />
+              <button><i className='fa fa-paper-plane'></i></button>
+            </form>
+          </div>
+        </div>
+
       </div>
     </footer>
   )
