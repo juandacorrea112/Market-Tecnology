@@ -1,7 +1,10 @@
 .contServicios{
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.921);
+    /* background-color: rgba(0, 0, 0, 0.921); */
+    background-image: url('../../../images/ventaTecnology.jpg');
+    background-size: cover;
+    background-position: center;
     font-family: 'Chakra Petch';
     display: flex;
     justify-content: center;
@@ -17,6 +20,7 @@
 }
 .contTittleS h1{
     font-size: 90px;
+    -webkit-text-stroke: 2px black;
 }
 .contCardsS{
     width: 100%;
@@ -24,6 +28,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 200px;
 }
 .contCardsS .card {
     position: relative;
