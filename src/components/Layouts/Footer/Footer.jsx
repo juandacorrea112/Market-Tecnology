@@ -14,12 +14,12 @@ export const Footer = () => {
               try our premium servicies.
             </p>
             <div className="social">
-              <a href="#"><i className='fab fa-facebook'></i></a>
-              <a href="#"><i className='fab fa-instagram'></i></a>
+              <a href="https://www.facebook.com/juandavid.corra.5"><i className='fab fa-facebook'></i></a>
+              <a href="https://www.instagram.com/juandavidc02_bmx/"><i className='fab fa-instagram'></i></a>
               <a href="#"><i className='fab fa-youtube'></i></a>
               <a href="#"><i className='fab fa-twitter'></i></a>
               <a href="#"><i className='fab fa-linkedin'></i></a>
-              <a href="#"><i className='fab fa-github'></i></a>
+              <a href="https://github.com/juandacorrea112"><i className='fab fa-github'></i></a>
             </div>
           </div>
 
