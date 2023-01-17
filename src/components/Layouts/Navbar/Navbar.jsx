@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import girlProfile from '../../../images/perfiles/girlProfile.jpg'
 import './Navbar.css'
 
 export const Navbar = () => {
@@ -130,11 +131,11 @@ export const Navbar = () => {
       <li>
     <div class="profile-details">
       <div class="profile-content">
-        {/* <img src="image/profile.jpg" alt="profileImg"> */}
+        <img src={girlProfile} alt={girlProfile} />
       </div>
       <div class="name-job">
-        <div class="profile_name">Prem Shahi</div>
-        <div class="job">Web Desginer</div>
+        <div className="profile_name">Prem Shahi</div>
+        <div className="job">Web Desginer</div>
       </div>
       <i class='bx bx-log-out' ></i>
     </div>

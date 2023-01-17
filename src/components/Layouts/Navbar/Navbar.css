@@ -39,11 +39,13 @@
   font-weight: 600;
   transition: 0.3s ease;
   transition-delay: 0.1s;
+  font-family: 'Chakra Petch';
 }
 .sidebar.close .logo-details .logo_name{
   transition-delay: 0s;
   opacity: 0;
   pointer-events: none;
+  font-family: 'Chakra Petch';
 }
 .sidebar .nav-links{
   height: 100%;
