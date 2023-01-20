@@ -3,8 +3,26 @@ import './PageLogin.css'
 
 export const PageLogin = () => {
   return (
-    <div>
-        <h1>Login</h1>
+    <div className="ContLogin">
+      <div className="lentLogin"></div>
+      <form className='FormLogin'>
+        <div className="contTittleLogin">
+          <h2>Login</h2>
+        </div>
+
+        <div className="inputBox">
+          <input type="email" required />
+          <span>Correo</span>
+        </div>
+        
+        <div className="inputBox">
+          <input type="password" required />
+          <span>Contraseña</span>
+        </div>
+
+        <button>Button</button>
+
+      </form>
     </div>
   )
 }
