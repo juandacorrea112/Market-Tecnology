@@ -18,9 +18,10 @@
     text-align: center;
     color: white;
 }
-.contTittleS h1{
+.contTittleS p{
     font-size: 90px;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 3px black;
+    font-family: 'Chakra Petch';
 }
 .contCardsS{
     width: 100%;

@@ -8,7 +8,7 @@ export const Pagehomebottom = () => {
   return (
     <div className='contServicios'>
         <div className="contTittleS">
-          <h1>PRODUCTOS EN VENTA</h1>
+          <p>PRODUCTOS EN VENTA</p>
         </div>
         <div className="contCardsS">
           <div className="card">

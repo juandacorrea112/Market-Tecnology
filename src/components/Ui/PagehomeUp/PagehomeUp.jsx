@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './PagehomeUp.css'
 
 export const PagehomeUp = () => {
@@ -11,13 +12,15 @@ export const PagehomeUp = () => {
       </div>
       <div className="contButtonsRs">
         
-        <button className="BtnP SecondClasBtn">
-          <span className="circleMovil" aria-hidden="true">
-          <span className="icon arrow"></span>
-          </span>
-          <span className="buttotext">INICIAR SESION</span>
-        </button>
-
+        <Link to='/Login'>
+          <button className="BtnP SecondClasBtn">
+            <span className="circleMovil" aria-hidden="true">
+            <span className="icon arrow"></span>
+            </span>
+            <span className="buttotext">INICIAR SESION</span>
+          </button>
+        </Link>
+          
 
         <button className="BtnP SecondClasBtn">
           <span className="circleMovil" aria-hidden="true">
