@@ -2,3 +2,120 @@
     margin: 0;
     padding: 0;
 }
+.ContRegister{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #23242a; */
+    background-image: url('../../../images/backRegister.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContRegister .lentRegister{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.841);
+}
+.FormRegister{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    border: 3px solid rgb(93 24 220);
+}
+.contTittleRegister{
+    color: #fff;
+    font-size: 35px;
+}
+.contDivsInputs{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.ContsNames{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.inputBoxR{
+    position: relative;
+    width: 250px;
+}
+.inputBoxR .EmailRe{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.25);
+    background: #1c1c1c;
+    border-radius: 5px;
+    outline: 5px;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.inputBoxR .EmailR{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.inputBoxR .EmailRe:valid ~ .EmailR,
+.inputBoxR .EmailRe:focus ~ .EmailR
+{
+    color: rgb(93 24 220);
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1c1c1c;
+    border-left: 1px solid rgb(93 24 220);
+    border-right: 1px solid rgb(93 24 220);
+    letter-spacing: 0.2em;
+}
+
+.ContPasswords{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/*===========button register===========*/
+.BtnRegister{
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+}
+.BtnRegister:hover{
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+.BtnRegister:active{
+ letter-spacing: 3px;
+ background-color: hsl(261deg 80% 48%);
+ color: hsl(0, 0%, 100%);
+ box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+ transform: translateY(10px);
+ transition: 100ms;
+}

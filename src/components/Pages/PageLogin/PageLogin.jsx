@@ -20,7 +20,7 @@ export const PageLogin = () => {
           <span>Contraseña</span>
         </div>
 
-        <button className='BtnFLogin'>Button</button>
+        <button type='sumbit' className='BtnFLogin'>ENTRAR</button>
 
       </form>
     </div>
