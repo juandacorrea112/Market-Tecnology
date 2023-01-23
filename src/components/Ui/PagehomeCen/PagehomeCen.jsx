@@ -10,7 +10,7 @@ export const PagehomeCen = () => {
                 <h1 className='TittlePrinciple'>PRODUCTOS MAS DESTACADOS</h1>
             </div>
             <div className="contCards">
-              <div className="card">
+              {/* <div className="card">
                 <div className="imgBox">
                   <img src={pcProduct} alt="..." />
                 </div>
@@ -19,30 +19,23 @@ export const PagehomeCen = () => {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quidem corporis 
                     commodi enim magni dolor tempora. Cupiditate totam, adipisci quod explicabo 
                     facere incidunt obcaecati impedit est molestiae laborum quasi? Totam!</p>
+                </div>
+              </div> */}
+              <div className="box">
+                <div className="content">
+                  <img src={pcProduct} alt="" />
                 </div>
               </div>
 
-              <div className="card">
-                <div className="imgBox">
-                  <img src={pcProduct} alt="..." />
-                </div>
-                <div className="contentInfo">
-                  <h2>Pc de escritorio</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quidem corporis 
-                    commodi enim magni dolor tempora. Cupiditate totam, adipisci quod explicabo 
-                    facere incidunt obcaecati impedit est molestiae laborum quasi? Totam!</p>
+              <div className="box">
+                <div className="content">
+                  <img src={pcProduct} alt="" />
                 </div>
               </div>
 
-              <div className="card">
-                <div className="imgBox">
-                  <img src={pcProduct} alt="..." />
-                </div>
-                <div className="contentInfo">
-                  <h2>Pc de escritorio</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quidem corporis 
-                    commodi enim magni dolor tempora. Cupiditate totam, adipisci quod explicabo 
-                    facere incidunt obcaecati impedit est molestiae laborum quasi? Totam!</p>
+              <div className="box">
+                <div className="content">
+                  <img src={pcProduct} alt="" />
                 </div>
               </div>
 
