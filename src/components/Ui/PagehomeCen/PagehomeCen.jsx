@@ -7,7 +7,7 @@ export const PagehomeCen = () => {
     <div className='PatherBackgImg'>
         <div className="lentDarkandCont">
             <div className="contTittleDestac">
-                <h1 className='TittlePrinciple'>PRODUCTOS MAS DESTACADOS</h1>
+                <h1 className='TittlePrinciple'>VENDEDORES MAS DESTACADOS</h1>
             </div>
             <div className="contCards">
               {/* <div className="card">
