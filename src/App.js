@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 //===== VISTAS =====//
 import { PageLogin } from './components/Pages/PageLogin/PageLogin';
 import { PageRegister } from './components/Pages/PageRegister/PageRegister';
+import { PageProfile } from './components/Pages/PageProfile/PageProfile';
 
 function App() {
   return (
