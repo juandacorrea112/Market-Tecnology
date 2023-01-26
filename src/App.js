@@ -19,6 +19,7 @@ function App() {
         <Route path='/' element={<PageHome/>}/>
         <Route path='/Login' element={<PageLogin/>}/>
         <Route path='/Registro' element={<PageRegister/>}/>
+        <Route path='/Perfil' element={<PageProfile/>}/>
       </Routes>
       {/* =============================== */}
       <Footer/>
