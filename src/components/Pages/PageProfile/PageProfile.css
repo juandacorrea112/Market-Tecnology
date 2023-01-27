@@ -94,10 +94,10 @@
     font-weight: bold;
     border-radius: 8px;
     transition: all ease-in 200ms;
+    color: #fff;
 }
 .perfil-usuario .menu-perfil a:hover {
     background-color: rgba(93 24 220);
-    color: #fff;
 }
 
 /* ==========Temporal==========*/
