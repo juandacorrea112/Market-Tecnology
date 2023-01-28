@@ -25,7 +25,7 @@ export const PagehomeCen = () => {
                 <div className="content">
                   <img src={pcProduct} alt="" />
                   <h2>Someone Foamus<br /><span>UX/IU Designer</span></h2>
-                  <a href="#">ver perfil</a>
+                  <a href="/Perfil">ver perfil</a>
                 </div>
               </div>
 
@@ -33,7 +33,7 @@ export const PagehomeCen = () => {
                 <div className="content">
                   <img src={pcProduct} alt="" />
                   <h2>Someone Foamus<br /><span>UX/IU Designer</span></h2>
-                  <a href="#">ver perfil</a>
+                  <a href="/Perfil">ver perfil</a>
                 </div>
               </div>
 
@@ -41,7 +41,7 @@ export const PagehomeCen = () => {
                 <div className="content">
                   <img src={pcProduct} alt="" />
                   <h2>Someone Foamus<br /><span>UX/IU Designer</span></h2>
-                  <a href="#">ver perfil</a>
+                  <a href="/Perfil">ver perfil</a>
                 </div>
               </div>
 
