@@ -34,7 +34,9 @@ export const PageProfile = () => {
           </ul>
         </div>
         <div className="contPublicproducts">
-          
+          <div className="card">
+            
+          </div>
         </div>
       </section>
     </>
