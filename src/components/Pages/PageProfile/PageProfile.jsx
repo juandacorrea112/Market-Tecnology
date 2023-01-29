@@ -1,5 +1,6 @@
 import React from 'react'
 import girlProfile from '../../../images/perfiles/girlProfile.jpg'
+import calularProducto from '../../../images/productos/calularProducto.jpg'
 import './PageProfile.css'
 
 export const PageProfile = () => {
@@ -35,7 +36,9 @@ export const PageProfile = () => {
         </div>
         <div className="contPublicproducts">
           <div className="card">
-            
+            <div className="poster">
+              <img src={calularProducto} alt="" />
+            </div>
           </div>
         </div>
       </section>
