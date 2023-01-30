@@ -137,4 +137,8 @@
 }
 .contPublicproducts .card .poster img{
     width: 100%;
+    transition: 0.5s;
+}
+.contPublicproducts .card:hover .poster img{
+    transform: translateY(-50px);
 }
