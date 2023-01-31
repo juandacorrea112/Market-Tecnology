@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import FondoTecnológicoMundoDigital from '../../../images/video/FondoTecnológicoMundoDigital.mp4'
 import './PagehomeUp.css'
 
 export const PagehomeUp = () => {
   return (
+    <>
+    {/* <video playsInline autoPlay loop muted src={FondoTecnológicoMundoDigital} className='backgroundVideo' ></video> */}
     <div className='ContPrinHomeUp'>
       <div className="contTittleP">
         <h2 className='TextAcompa'>Todo sobre la tecnologia</h2>
@@ -39,5 +42,6 @@ export const PagehomeUp = () => {
 
       </div>
     </div>
+    </>
   )
 }
