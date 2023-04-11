@@ -52,32 +52,3 @@ export const PagehomeUp = () => {
     </>
   )
 }
-
-
-
-{/* <div className="contButtonsRs">
-        
-        <Link to='/Login'>
-          <button className="BtnP SecondClasBtn">
-            <span className="circleMovil" aria-hidden="true">
-            <span className="icon arrow"></span>
-            </span>
-            <span className="buttotext">INICIAR SESION</span>
-          </button>
-        </Link>
-          
-        <Link to='/Registro'>
-          <button className="BtnP SecondClasBtn">
-            <span className="circleMovil" aria-hidden="true">
-            <span className="icon arrow"></span>
-            </span>
-            <span className="buttotext">REGISTRARSE</span>
-          </button>
-        </Link>
-        
-        <button className="BtnP SecondClasBtn">
-          <span className="circleMovil" aria-hidden="true">
-          <span className="icon arrow"></span>
-          </span>
-          <span className="buttotext">DESTACADOS</span>
-        </button> */}
