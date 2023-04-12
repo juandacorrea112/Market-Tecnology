@@ -1,3 +1,15 @@
+/* Scrollbar style*/
+body::-webkit-scrollbar{
+     width: 15px;
+}
+body::-webkit-scrollbar-thumb{
+     background: #0ef;
+     border-radius: 8px;
+}
+body::-webkit-scrollbar-thumb:hover{
+     background: #2b77bf;
+}
+
 /*CLASE GLOBAL PARA BOTONES*/
 .BtnP {
     position: relative;
