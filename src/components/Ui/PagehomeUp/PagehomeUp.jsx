@@ -16,10 +16,10 @@ export const PagehomeUp = () => {
         <i class='bx bx-menu' id='menu-icon'></i>
 
         <nav className='navbar'>
-          <a href='#' className='Active'>Home</a>
-          <a href='#'>sellers</a>
-          <a href='#'>products</a>
-          <a href='#'>Profile</a>
+          <a href='#home' className='Active'>Home</a>
+          <a href='#about'>sellers</a>
+          <a href='#products'>products</a>
+          <a href='#profile'>Profile</a>
         </nav>
         
       </header>
