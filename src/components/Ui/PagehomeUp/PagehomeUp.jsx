@@ -1,54 +1,50 @@
 import React from 'react'
+import iconTecnologyModifi from '../../../images/icons/iconTecnologyModifi.png'
 import { Link } from 'react-router-dom'
-import ComputadoraVideo from '../../../images/video/ComputadoraVideo.mp4'
+// import ComputadoraVideo from '../../../images/video/ComputadoraVideo.mp4'
 import './PagehomeUp.css'
 
 export const PagehomeUp = () => {
   return (
     <>
-      <main id='hero'>
-        <div className='ContPrinHomeUp'>
-          <div className="contTittleP">
-            <h2 className='TextAcompa'>Todo sobre la tecnologia</h2>
-            <h1 className='TittlePrinciple'>Market Tecnology</h1>
-            <h2 className='TextAcompa'>encuentra tu PC Celular o Consola ideal</h2>
-          </div>
-          <div className="contButtonsRs">
-            
-            <Link to='/Login'>
-              <button className="BtnP SecondClasBtn">
-                <span className="circleMovil" aria-hidden="true">
-                <span className="icon arrow"></span>
-                </span>
-                <span className="buttotext">INICIAR SESION</span>
-              </button>
-            </Link>
-              
-            <Link to='/Registro'>
-              <button className="BtnP SecondClasBtn">
-                <span className="circleMovil" aria-hidden="true">
-                <span className="icon arrow"></span>
-                </span>
-                <span className="buttotext">REGISTRARSE</span>
-              </button>
-            </Link>
-            
-            <button className="BtnP SecondClasBtn">
-              <span className="circleMovil" aria-hidden="true">
-              <span className="icon arrow"></span>
-              </span>
-              <span className="buttotext">DESTACADOS</span>
-            </button>
+      {/* header-design  */}
 
-          </div>
+      <header className='header'>
+
+        <a href="#" className='logo'>Portafolio</a>
+
+        <i class='bx bx-menu' id='menu-icon'></i>
+
+        <nav className='navbar'>
+          <a href='#' className='Active'>Home</a>
+          <a href='#'>Vendedores</a>
+          <a href='#'>Productos</a>
+          <a href='#'>Perfil</a>
+        </nav>
+        
+      </header>
+
+      {/* home section desing */}
+      <section className="home" id="home">
+        <div className="home-content">
+          <h3>Hello, It's Me</h3>
+          <h1>Juan david</h1>
+          <h3>And I'm a <span>Frontend Developer</span></h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+           Ab harum autem in qui illo magnam.</p>
+           <div className="social-media">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-github' ></i></a>
+           </div>
+           <a href="#" className='btn'>Download CV</a>
         </div>
-        <video muted autoPlay loop >
-          <source src={ComputadoraVideo} type='video/mp4'/>
-        </video>
-        <div className="capa">
-          
+
+        <div className="home-img">
+          <img src={iconTecnologyModifi} alt="" />
         </div>
-      </main>
+      </section>
+
     </>
   )
 }

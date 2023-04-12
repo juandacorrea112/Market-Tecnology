@@ -1,60 +1,77 @@
-.ContPrinHomeUp{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Chakra Petch';
+}
+
+/* variables de colores */
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
-    /* background-image: url('../../../images/bannerEnter.jpg'); */
-    background-size: cover;
-    background-position: center;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.Active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 100px;
-    position: absolute;
-    z-index: 2;
-}
-.contTittleP{
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-.contTittleP .TextAcompa{
-    color: white;
-    font-family: 'Chakra Petch';
-    font-size: 27px;
-}
-.contTittleP .TittlePrinciple{
-    font-family: 'Chakra Petch';
-    font-size: 90px;
-    color: white;
-}
-.ContPrinHomeUp .contButtonsRs{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
     gap: 50px;
-}
-
-#hero {
-    min-height: 100vh;
-    position: relative;
-}
-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.capa {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #1c1c1d;
-    opacity: 0.5;
-    mix-blend-mode: overlay;
 }
