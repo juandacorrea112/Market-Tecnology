@@ -11,7 +11,7 @@ export const PagehomeUp = () => {
 
       <header className='header'>
 
-        <a href="#" className='logo'>Portafolio</a>
+        <a href="#" className='logo'>Market technology</a>
 
         <i class='bx bx-menu' id='menu-icon'></i>
 
@@ -27,24 +27,23 @@ export const PagehomeUp = () => {
       {/* home section desing */}
       <section className="home" id="home">
         <div className="home-content">
-          <h3>Hello, It's Me</h3>
-          <h1>Juan david</h1>
-          <h3>And I'm a <span>Frontend Developer</span></h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-           Ab harum autem in qui illo magnam.</p>
+          <h3>Hello and welcome</h3>
+          <h1>to market technology</h1>
+          <h3>The best technology buying <span>and selling website</span></h3>
+          <p>You can create your own profile and thus buy or sell 
+            your products on our website very easily.</p>
            <div className="social-media">
             <a href="#"><i class='bx bxl-facebook'></i></a>
             <a href="#"><i class='bx bxl-instagram' ></i></a>
             <a href="#"><i class='bx bxl-github' ></i></a>
            </div>
-           <a href="#" className='btn'>Download CV</a>
+           <a href="#" className='btn'>Register</a>
         </div>
 
         <div className="home-img">
           <img src={iconTecnologyModifi} alt="" />
         </div>
       </section>
-
     </>
   )
 }
