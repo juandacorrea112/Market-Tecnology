@@ -17,9 +17,9 @@ export const PagehomeUp = () => {
 
         <nav className='navbar'>
           <a href='#' className='Active'>Home</a>
-          <a href='#'>Vendedores</a>
-          <a href='#'>Productos</a>
-          <a href='#'>Perfil</a>
+          <a href='#'>sellers</a>
+          <a href='#'>products</a>
+          <a href='#'>Profile</a>
         </nav>
         
       </header>
