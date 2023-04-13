@@ -1,5 +1,5 @@
 import React from 'react'
-import LogoFooter from '../../../images/icons/LogoFooter.jpg'
+import iconTecnologyModifi from '../../../images/icons/iconTecnologyModifi.png'
 import './Footer.css'
 
 export const Footer = () => {
@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col" id='company'>
-            <img className='imgFooter logo' src={LogoFooter} alt="" />
+            <img className='imgFooter logo' src={iconTecnologyModifi} alt="" />
             <p>
               we are spacialized in desingnis, make your business a brand 
               try our premium servicies.

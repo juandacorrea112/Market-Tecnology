@@ -28,6 +28,12 @@
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.services-container .services-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
 }
 
 .services-box i {
