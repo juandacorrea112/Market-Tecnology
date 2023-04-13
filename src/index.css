@@ -9,6 +9,12 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-thumb:hover{
      background: #2b77bf;
 }
+:root {
+     --bg-color: #1f242d;
+     --second-bg-color: #323946;
+     --text-color: #fff;
+     --main-color: #0ef;
+ }
 
 /*CLASE GLOBAL PARA BOTONES*/
 .BtnP {
