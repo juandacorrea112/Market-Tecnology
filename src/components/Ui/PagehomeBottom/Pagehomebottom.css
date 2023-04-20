@@ -49,3 +49,9 @@
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+
+@media (max-width: 768px){
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+}

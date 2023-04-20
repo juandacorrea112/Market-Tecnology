@@ -1,20 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import iconTecnologyModifi from '../../../images/icons/iconTecnologyModifi.png'
-// import { Link } from 'react-router-dom'
-// import ComputadoraVideo from '../../../images/video/ComputadoraVideo.mp4'
 import './PagehomeUp.css'
 
 export const PagehomeUp = () => {
 
   /*=== toggle icon navbar ===*/
-  // let menuIcon = document.querySelector('#menu-icon')
-  // let navbar = document.querySelector('.navbar')
   
-  // menuIcon.onclick = () => {
-  //   menuIcon.classList.toggle('bx-x')
-  //   navbar.classList.toggle('active')
-  // }
+  const [changeic, setChangeic ] = useState(0)
+  const [active, setActive ] = useState()
 
+  const menuIcons =()=> {
+
+    if (changeic == 0) {
+      setChangeic(1)
+      setActive()
+    }
+    else if (changeic == 1) {
+      setChangeic(0)
+      setActive('active')
+    }
+
+  }
+
+  
   /* === ACTIVACION DE SCROLL PARA SECCIONES === */
 
   let sections = document.querySelectorAll('section')
@@ -47,9 +55,15 @@ export const PagehomeUp = () => {
 
         <a href="#" className='logo'>Market technology</a>
 
-        <i className='bx bx-menu' id='menu-icon'></i>
+        {(changeic == 1) &&
+          <i onClick={menuIcons} className='bx bx-menu' id='menu-icon' ></i>
+        }
 
-        <nav className='navbar'>
+        {(changeic == 0) &&
+          <i onClick={menuIcons} className='bx bx-x' id='menu-icon'></i>
+        }
+
+        <nav className={`navbar ${active}`}>
           <a href='#home' className='Active'>Home</a>
           <a href='#about'>sellers</a>
           <a href='#products'>products</a>
