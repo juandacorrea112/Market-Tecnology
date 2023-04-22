@@ -78,6 +78,7 @@ section {
 
 .home-img img {
     width: 35vw;
+    filter: drop-shadow(2px 15px 6px black);
     animation: floatImage 4s ease-in-out infinite;
 }
 
