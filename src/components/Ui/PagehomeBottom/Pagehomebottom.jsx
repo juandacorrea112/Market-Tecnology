@@ -1,10 +1,25 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
+import ScrollReveal from 'scrollreveal'
 import './Pagehomebottom.css'
-// import  logopc2do  from '../../../images/logopc2do.jpg'
-// import cellProducto from '../../../images/productos/cellProducto.jpg'
-// import pcProductoVenta from '../../../images/productos/pcProductoVenta.jpg'
 
 export const Pagehomebottom = () => {
+
+  //======= ScrollReval ==========
+  useEffect(() => {
+
+    ScrollReveal({
+      
+      reset: true,
+      distance: '80px',
+      duration: 2000,
+      delay: 200
+      
+    });
+
+    ScrollReveal().reveal('.services-container', {origin: 'bottom'})
+  },[])
+
+
   return (
     <>
       {/* services section */}

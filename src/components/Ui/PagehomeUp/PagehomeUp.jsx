@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ScrollReveal from 'scrollreveal';
+import ScrollReveal from 'scrollreveal'
 import iconTecnologyModifi from '../../../images/icons/iconTecnologyModifi.png'
 import './PagehomeUp.css'
 
@@ -18,6 +18,9 @@ export const PagehomeUp = () => {
     });
 
     ScrollReveal().reveal('.home-content', {origin: 'top'})
+    ScrollReveal().reveal('.home-content h1', {origin: 'left'})
+    ScrollReveal().reveal('.home-content p', {origin: 'right'})
+    ScrollReveal().reveal('.home-img', {origin: 'bottom'})
   },[])
 
   /*=== toggle icon navbar ===*/

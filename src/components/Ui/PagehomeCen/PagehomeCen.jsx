@@ -1,9 +1,27 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
+import ScrollReveal from 'scrollreveal'
 import iconTecnologyWhite from '../../../images/icons/iconTecnologyWhite.png'
 import './PagehomeCen.css'
 import '../../../index.css'
 
 export const PagehomeCen = () => {
+
+  //======= ScrollReval ==========
+  useEffect(() => {
+
+    ScrollReveal({
+      
+      reset: true,
+      distance: '80px',
+      duration: 2000,
+      delay: 200
+      
+    });
+
+    ScrollReveal().reveal('.about-img', {origin: 'left'})
+    ScrollReveal().reveal('.about-content', {origin: 'right'})
+  },[])
+
   return (
     <>
       {/* about section  desing */}

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
+import ScrollReveal from 'scrollreveal'
 import pcMack from '../../../images/productos/pcMack.jpg'
 import ctUppc from '../../../images/productos/ctUppc.jpg'
 import pcProductoVenta from '../../../images/productos/pcProductoVenta.jpg'
@@ -6,6 +7,23 @@ import './PagehomeProducts.css'
 
 
 export const PagehomeProducts = () => {
+
+    //======= ScrollReval ==========
+  useEffect(() => {
+
+    ScrollReveal({
+      
+      reset: true,
+      distance: '80px',
+      duration: 2000,
+      delay: 200
+      
+    });
+
+    ScrollReveal().reveal('.heading', {origin: 'top'})
+    ScrollReveal().reveal('.portfolio-box', {origin: 'bottom'})
+  },[])
+
     return (
         <>
             {/* products section desing  */}
