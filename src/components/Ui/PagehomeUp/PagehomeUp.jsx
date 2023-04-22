@@ -105,7 +105,7 @@ export const PagehomeUp = () => {
           <a href='#home' className='Active'>Home</a>
           <a href='#about'>sellers</a>
           <a href='#products'>products</a>
-          <a href='#profile'>Profile</a>
+          <a href='/Perfil'>Profile</a>
         </nav>
         
       </header>
