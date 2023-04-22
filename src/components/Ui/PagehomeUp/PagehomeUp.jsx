@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import Typed from 'typed.js';
 import ScrollReveal from 'scrollreveal'
 import iconTecnologyModifi from '../../../images/icons/iconTecnologyModifi.png'
 import './PagehomeUp.css'
@@ -10,7 +11,7 @@ export const PagehomeUp = () => {
 
     ScrollReveal({
       
-      reset: true,
+      // reset: true,
       distance: '80px',
       duration: 2000,
       delay: 200
@@ -21,6 +22,27 @@ export const PagehomeUp = () => {
     ScrollReveal().reveal('.home-content h1', {origin: 'left'})
     ScrollReveal().reveal('.home-content p', {origin: 'right'})
     ScrollReveal().reveal('.home-img', {origin: 'bottom'})
+  },[])
+
+
+  /* ========== Typed js ========== */
+  const typedRef = useRef(null)
+
+  useEffect(() => {
+    const options = {
+      strings: ['and selling website', 'Market', 'Tecnology'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 100,
+      loop: true
+    }
+
+    const typed = new Typed(typedRef.current, options)
+
+    return () => {
+      // Limpiar la instancia de Typed.js al desmontar el componente
+      typed.destroy()
+    }
   },[])
 
   /*=== toggle icon navbar ===*/
@@ -96,7 +118,11 @@ export const PagehomeUp = () => {
         <div className="home-content">
           <h3>Hello and welcome</h3>
           <h1>to market technology</h1>
-          <h3>The best technology buying <span>and selling website</span></h3>
+          {/* and selling website */}
+          <h3>The best technology buying</h3>
+          <h3>
+            <span ref={typedRef}></span>
+          </h3>
           <p>You can create your own profile and thus buy or sell 
             your products on our website very easily.</p>
            <div className="social-media">
