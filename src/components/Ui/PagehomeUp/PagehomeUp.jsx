@@ -40,6 +40,7 @@ export const PagehomeUp = () => {
     const typed = new Typed(typedRef.current, options)
 
     return () => {
+      
       // Limpiar la instancia de Typed.js al desmontar el componente
       typed.destroy()
     }
@@ -48,17 +49,15 @@ export const PagehomeUp = () => {
   /*=== toggle icon navbar ===*/
   
   const [changeic, setChangeic ] = useState(0)
-  const [active, setActive ] = useState()
 
   const menuIcons =()=> {
 
     if (changeic == 0) {
       setChangeic(1)
-      setActive()
+
     }
     else if (changeic == 1) {
       setChangeic(0)
-      setActive('active')
     }
 
   }
@@ -87,28 +86,6 @@ export const PagehomeUp = () => {
 
   return (
     <>
-      {/* header-design  */}
-
-      <header className='header'>
-
-        <a href="#" className='logo'>Market technology</a>
-
-        {(changeic == 1) &&
-          <i onClick={menuIcons} className='bx bx-menu' id='menu-icon' ></i>
-        }
-
-        {(changeic == 0) &&
-          <i onClick={menuIcons} className='bx bx-x' id='menu-icon'></i>
-        }
-
-        <nav className={`navbar ${active}`}>
-          <a href='#home' className='Active'>Home</a>
-          <a href='#about'>sellers</a>
-          <a href='#products'>products</a>
-          <a href='/Perfil'>Profile</a>
-        </nav>
-        
-      </header>
 
       {/* home section desing */}
       <section className="home" id="home">
@@ -123,9 +100,9 @@ export const PagehomeUp = () => {
           <p>You can create your own profile and thus buy or sell 
             your products on our website very easily.</p>
            <div className="social-media">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
-            <a href="#"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.facebook.com/juandavid.corra.5/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/juandavidc02_bmx/?next=%2F"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://github.com/juandacorrea112"><i class='bx bxl-github' ></i></a>
            </div>
            <a href="#" className='btn'>Register</a>
         </div>

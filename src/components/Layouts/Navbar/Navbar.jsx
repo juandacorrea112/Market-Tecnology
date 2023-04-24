@@ -15,7 +15,7 @@ export const Navbar = () => {
 
   return (
     <>
-      {/* <div className={`sidebar ${sidebarNav}`}>
+      <div className={`sidebar ${sidebarNav}`}>
     <div class="logo-details">
       {sidebarNav == "close" &&
         <i onClick={OpenMenu} className='bx bx-menu' style={{cursor:"pointer"}} ></i>
@@ -141,7 +141,7 @@ export const Navbar = () => {
     </div>
   </li>
 </ul>
-  </div> */}
+  </div>
 
     </>
   )
