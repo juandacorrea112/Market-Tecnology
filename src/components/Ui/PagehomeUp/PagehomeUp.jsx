@@ -40,27 +40,11 @@ export const PagehomeUp = () => {
     const typed = new Typed(typedRef.current, options)
 
     return () => {
-      
+
       // Limpiar la instancia de Typed.js al desmontar el componente
       typed.destroy()
     }
   },[])
-
-  /*=== toggle icon navbar ===*/
-  
-  const [changeic, setChangeic ] = useState(0)
-
-  const menuIcons =()=> {
-
-    if (changeic == 0) {
-      setChangeic(1)
-
-    }
-    else if (changeic == 1) {
-      setChangeic(0)
-    }
-
-  }
 
   
   /* === ACTIVACION DE SCROLL PARA SECCIONES === */

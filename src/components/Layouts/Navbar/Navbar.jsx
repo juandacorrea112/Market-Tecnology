@@ -44,7 +44,7 @@ export const Navbar = () => {
                 <i class='bx bx-collection' ></i>
                 <span class="link_name">Products</span>
               </a>
-              <i class='bx bxs-chevron-down arrow' ></i>
+
             </div>
             <ul class="sub-menu">
               <li><a class="link_name" href="#">Products</a></li>
@@ -55,13 +55,13 @@ export const Navbar = () => {
           </li>
           <li>
             <div class="iocn-link">
-              <a href="#">
+              <a href="/Perfil">
                 <i class='bx bx-cog' ></i>
                 <span class="link_name">Setting</span>
               </a>
             </div>
             <ul class="sub-menu">
-              <li><a class="link_name" href="#">Setting</a></li>
+              <a class="link_name" href="/Perfil">Setting</a>
               <li><a href="#">Name</a></li>
               <li><a href="#">Last Name</a></li>
               <li><a href="#">Email</a></li>
