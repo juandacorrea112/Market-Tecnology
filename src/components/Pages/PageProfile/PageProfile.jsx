@@ -6,42 +6,52 @@ import './PageProfile.css'
 export const PageProfile = () => {
   return (
     <>
-      <section className='perfil-usuario'>
-        <div className="contenedor-perfil">
-          <div className="portada-perfil">
-            <div className="avatar-perfil">
-              <img src={girlProfile} alt="..." />
-            </div>
-            <div className="datos-perfil">
-              <h4 className='titulo-usuario'>Nombre de usuario</h4>
-              <p className='bio-usuario'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, rerum?</p>
-              <ul className='lista-perfil'>
-                <li>35 Seguidores</li>
-                <li>7 Seguidos</li>
-                <li>32 Publicaciones</li>
-              </ul>
-            </div>
-            <div className="opcciones-perfil">
-              <button type=''>cambiar portada</button>
-              <button type=''><span class="material-symbols-outlined"> settings </span></button>
+    <div className="contCardprofile">
+      <div class="wrapper">
+        <div class="left">
+          <img src={girlProfile} alt={girlProfile} width="100"/>
+            <h4>Alex William</h4>
+            <p>UI Developer</p>
+        </div>
+        <div class="right">
+          <div class="info">
+            <h3>Information</h3>
+            <div class="info_data">
+              <div class="data">
+                <h4>Email</h4>
+                <p>alex@gmail.com</p>
+              </div>
+              <div class="data">
+                <h4>Phone</h4>
+                <p>0001-213-998761</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="menu-perfil">
-          <ul>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Celulares</a></li>
-            <li><a href="#">Computadores</a></li>
-          </ul>
-        </div>
-        <div className="contPublicproducts">
-          <div className="card">
-            <div className="poster">
-              <img src={calularProducto} alt="" />
+
+          <div class="projects">
+            <h3>Projects</h3>
+            <div class="projects_data">
+              <div class="data">
+                <h4>Recent</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="data">
+                <h4>Most Viewed</h4>
+                <p>dolor sit amet.</p>
+              </div>
             </div>
           </div>
+
+          <div class="social_media">
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
     </>
   )
 }
