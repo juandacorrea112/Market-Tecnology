@@ -1,6 +1,6 @@
 import React from 'react'
 import girlProfile from '../../../images/perfiles/girlProfile.jpg'
-import calularProducto from '../../../images/productos/calularProducto.jpg'
+// import calularProducto from '../../../images/productos/calularProducto.jpg'
 import './PageProfile.css'
 
 export const PageProfile = () => {
@@ -11,7 +11,7 @@ export const PageProfile = () => {
         <div class="left">
           <img src={girlProfile} alt={girlProfile} width="100"/>
             <h4>Alex William</h4>
-            <p>UI Developer</p>
+            <p>Vendendor</p>
         </div>
         <div class="right">
           <div class="info">
