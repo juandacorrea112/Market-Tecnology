@@ -32,7 +32,7 @@ export const Navbar = () => {
 
 
           <li>
-            <a id='simbolHome' href="/Perfil">
+            <a id='simbolHome' href="/">
               <span class="material-symbols-outlined">cottage</span>
               <span class="link_name">Home</span>
             </a>
