@@ -29,6 +29,19 @@ export const Navbar = () => {
         </div>
 
         <ul class="nav-links">
+
+
+          <li>
+            <a id='simbolHome' href="/Perfil">
+              <span class="material-symbols-outlined">cottage</span>
+              <span class="link_name">Home</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="/">Home</a></li>
+            </ul>
+          </li>
+
+
           <li>
             <a id='anclIcon' href="/Perfil">
               <span id='simbolPerfil' className="material-symbols-outlined">person</span>
