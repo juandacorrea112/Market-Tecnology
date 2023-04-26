@@ -6,6 +6,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+#simbolPerfil {
+  margin-left: 26px;
+  height: 40px;
+}
 .sidebar{
   position: fixed;
   top: 0;
