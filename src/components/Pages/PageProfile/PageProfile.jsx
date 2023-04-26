@@ -14,7 +14,7 @@ export const PageProfile = () => {
             <p>Vendendor</p>
         </div>
         <div class="right">
-          <div class="info">
+          <div class="info"> 
             <h3>Information</h3>
             <div class="info_data">
               <div class="data">
@@ -29,7 +29,7 @@ export const PageProfile = () => {
           </div>
 
           <div class="projects">
-            <h3>Projects</h3>
+            <h3>Description</h3>
             <div class="projects_data">
               <div class="data">
                 <h4>Recent</h4>
