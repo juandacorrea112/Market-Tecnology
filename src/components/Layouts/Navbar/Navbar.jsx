@@ -30,7 +30,7 @@ export const Navbar = () => {
 
         <ul class="nav-links">
           <li>
-            <a href="/Perfil">
+            <a id='anclIcon' href="/Perfil">
               <span id='simbolPerfil' className="material-symbols-outlined">person</span>
               <span class="link_name">Profile</span>
             </a>

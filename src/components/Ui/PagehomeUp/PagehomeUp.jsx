@@ -88,7 +88,7 @@ export const PagehomeUp = () => {
             <a href="https://www.instagram.com/juandavidc02_bmx/?next=%2F"><i class='bx bxl-instagram' ></i></a>
             <a href="https://github.com/juandacorrea112"><i class='bx bxl-github' ></i></a>
            </div>
-           <a href="#" className='btn'>Register</a>
+           <a href="/Registro" className='btn'>Register</a>
         </div>
 
         <div className="home-img">
