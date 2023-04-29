@@ -1,3 +1,10 @@
+/* variables de colores */
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
 *{
     margin: 0;
     padding: 0;
@@ -33,7 +40,7 @@
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    border: 3px solid rgb(93 24 220);
+    border: 3px solid var(--main-color);
 }
 .FormLogin .contTittleLogin{
     width: 100%;
@@ -72,26 +79,26 @@
 }
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span {
-    color: rgb(93 24 220);
+    color: var(--main-color);
     transform: translateX(10px) translateY(-7px);
     font-size: 0.65em;
     padding: 0 10px;
     background: #1c1c1c;
-    border-left: 1px solid rgb(93 24 220);
-    border-right: 1px solid rgb(93 24 220);
+    border-left: 1px solid var(--main-color);
+    border-right: 1px solid var(--main-color);
     letter-spacing: 0.2em;
 }
 .inputBox:nth-child(2) input:valid ~ span,
 .inputBox:nth-child(2) input:focus ~ span
 {
-    background: rgb(93 24 220);
+    background: var(--main-color);
     color: #1c1c1c;
     border-radius: 2px;
 }
 .inputBox input:valid,
 .inputBox input:focus
 {
-    border: 1px solid rgb(93 24 220);
+    border: 1px solid var(--main-color);
 }
 
 /*=======BTN FORM LOGIN=======*/
@@ -109,16 +116,16 @@
 
 .BtnFLogin:hover {
  letter-spacing: 3px;
- background-color: hsl(261deg 80% 48%);
- color: hsl(0, 0%, 100%);
- box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+ background-color: var(--main-color);
+ color: #000;
+ box-shadow: var(--main-color) 0px 7px 29px 0px;
 }
 
 .BtnFLogin:active {
  letter-spacing: 3px;
- background-color: hsl(261deg 80% 48%);
+ background-color: var(--main-color);
  color: hsl(0, 0%, 100%);
- box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+ box-shadow: var(--main-color) 0px 0px 0px 0px;
  transform: translateY(10px);
  transition: 100ms;
 }

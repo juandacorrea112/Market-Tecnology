@@ -1,3 +1,10 @@
+/* variables de colores */
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
 *{
     margin: 0;
     padding: 0;
@@ -31,7 +38,7 @@
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    border: 3px solid rgb(93 24 220);
+    border: 3px solid var(--main-color);
 }
 .contTittleRegister{
     color: #fff;
@@ -104,12 +111,13 @@
     text-transform: uppercase;
     font-size: 15px;
     transition: all .5s ease;
+    cursor: pointer;
 }
 .BtnRegister:hover{
     letter-spacing: 3px;
-    background-color: hsl(261deg 80% 48%);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: var(--main-color) 0px 7px 29px 0px;
 }
 .BtnRegister:active{
  letter-spacing: 3px;
