@@ -8,6 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 import { PageLogin } from './components/Pages/PageLogin/PageLogin';
 import { PageRegister } from './components/Pages/PageRegister/PageRegister';
 import { PageProfile } from './components/Pages/PageProfile/PageProfile';
+import { PageSettings } from './components/Pages/PageSettings/PageSettings';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/Login' element={<PageLogin/>}/>
         <Route path='/Registro' element={<PageRegister/>}/>
         <Route path='/Perfil' element={<PageProfile/>}/>
+        <Route path='/Settings' element={<PageSettings/>}/>
       </Routes>
       {/* =============================== */}
       <Footer/>

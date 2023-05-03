@@ -77,7 +77,7 @@ export const Navbar = () => {
           </li>
           <li>
             <div class="iocn-link">
-              <a href="/Perfil">
+              <a href="/Settings">
                 <i class='bx bx-cog' ></i>
                 <span class="link_name">Setting</span>
               </a>
