@@ -32,6 +32,14 @@ export const PageSettings = () => {
                         </div>
                     </div>
                 </div>
+                
+                <div className="contPatherconfigure">
+                    <div className="contTittleInfo">
+                        <h2>Personal profile</h2>
+                        <p>configure your personal data</p>
+                    </div>
+                    
+                </div>
 
             </div>
         </div>
