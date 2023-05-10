@@ -1,13 +1,39 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import girlProfile from '../../../images/perfiles/girlProfile.jpg'
 import './PageSettings.css'
 
 export const PageSettings = () => {
 
+    const [settinginformation, setSettinginformation] = useState()
+
+    useEffect(() => {
+        setSettinginformation(0)
+    }, [])
 
     function setPlaceholder(input) {
         let newPlaceholder = input.value;
         input.setAttribute("placeholder", newPlaceholder);
+    }
+
+    //funciones de seleccion para la configuracion de perfil de usuario
+    function Changename() {
+        setSettinginformation(0)
+    }
+
+    function Changenumber() {
+        setSettinginformation(1)
+    }
+
+    function Changeprofile() {
+        setSettinginformation(2)
+    }
+
+    function Changepassword() {
+        setSettinginformation(3)
+    }
+
+    function Changeemail() {
+        setSettinginformation(4)
     }
 
 
@@ -24,19 +50,19 @@ export const PageSettings = () => {
                         <h3>Name User</h3>
                     </div>
                     <div className="contOptionsS">
-                        <div className="changeDates">
-                            <h3>Full name</h3>
+                        <div onClick={Changename} className="changeDates">
+                            <h3>Complete names</h3>
                         </div>
-                        <div className="changeDates">
+                        <div onClick={Changenumber} className="changeDates">
                             <h3>Phone</h3>
                         </div>
-                        <div className="changeDates">
+                        <div onClick={Changeprofile} className="changeDates">
                             <h3>Profile Picture</h3>
                         </div>
-                        <div className="changeDates">
+                        <div onClick={Changepassword} className="changeDates">
                             <h3>Password</h3>
                         </div>
-                        <div className="changeDates">
+                        <div onClick={Changeemail} className="changeDates">
                             <h3>Email</h3>
                         </div>
                     </div>
@@ -47,27 +73,27 @@ export const PageSettings = () => {
                         <h2>Personal profile</h2>
                         <p>configure your personal data</p>
                     </div>
+
                     <div className="contDataUser">
-                        <div className="conSubdata">
-                            <h3>Basics:</h3>
-                            <div className="contBoxdatas">
-                                <form>
-                                    <input className='inputBoxdata' onChange={setPlaceholder} type="text" id="placeholder-input" placeholder="User name" onblur="setPlaceholder(this)" />
-                                    <input className='inputBoxdata' onChange={setPlaceholder} type="text" id="placeholder-input" placeholder="Last name" onblur="setPlaceholder(this)" />
-                                    <input className='inputBoxdata' onChange={setPlaceholder} type="email" id="placeholder-input" placeholder="Email" onblur="setPlaceholder(this)" />
-                                    <input className='inputBoxdata' onChange={setPlaceholder} type="password" id="placeholder-input" placeholder="Password" onblur="setPlaceholder(this)" />
-
-                                    <div className="contButtonS">
-                                        <button>Save</button>
-                                    </div>
-                                </form>
-
+                        {(settinginformation == 0) &&
+                            <div className="conSubdata">
+                                <h3>Basics:</h3>
+                                <div className="contBoxdatas">
+                                    <form>
+                                        <input className='inputBoxdata' onChange={setPlaceholder} type="text" id="placeholder-input" placeholder="User name" onblur="setPlaceholder(this)" />
+                                        <input className='inputBoxdata' onChange={setPlaceholder} type="text" id="placeholder-input" placeholder="Last name" onblur="setPlaceholder(this)" />
+                                        <input className='inputBoxdata' onChange={setPlaceholder} type="email" id="placeholder-input" placeholder="Email" onblur="setPlaceholder(this)" />
+                                        <input className='inputBoxdata' onChange={setPlaceholder} type="password" id="placeholder-input" placeholder="Password" onblur="setPlaceholder(this)" />
+                                        <div className="contButtonS">
+                                            <button>Save</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
+                        }
 
 
 
-
-                        </div>
                     </div>
                 </div>
 
