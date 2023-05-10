@@ -80,10 +80,10 @@ export const PageSettings = () => {
                                 <h3>Basics:</h3>
                                 <div className="contBoxdatas">
                                     <form>
-                                        <input className='inputBoxdata' onChange={setPlaceholder} type="text" id="placeholder-input" placeholder="User name" onblur="setPlaceholder(this)" />
-                                        <input className='inputBoxdata' onChange={setPlaceholder} type="text" id="placeholder-input" placeholder="Last name" onblur="setPlaceholder(this)" />
-                                        <input className='inputBoxdata' onChange={setPlaceholder} type="email" id="placeholder-input" placeholder="Email" onblur="setPlaceholder(this)" />
-                                        <input className='inputBoxdata' onChange={setPlaceholder} type="password" id="placeholder-input" placeholder="Password" onblur="setPlaceholder(this)" />
+                                        <input className='inputBoxdata' onChange={setPlaceholder} type="text" required id="placeholder-input" placeholder="User name" onblur="setPlaceholder(this)" />
+                                        <input className='inputBoxdata' onChange={setPlaceholder} type="text" required id="placeholder-input" placeholder="Last name" onblur="setPlaceholder(this)" />
+                                        <input className='inputBoxdata' onChange={setPlaceholder} type="email" required id="placeholder-input" placeholder="Email" onblur="setPlaceholder(this)" />
+                                        <input className='inputBoxdata' onChange={setPlaceholder} type="password" required id="placeholder-input" placeholder="Password" onblur="setPlaceholder(this)" />
                                         <div className="contButtonS">
                                             <button>Save</button>
                                         </div>
@@ -92,7 +92,50 @@ export const PageSettings = () => {
                             </div>
                         }
 
+                        {(settinginformation == 1) &&
+                            <div className="conSubdata">
+                                <h3>Contact:</h3>
+                                <div className="contBoxdatas">
+                                    <form>
+                                        <input className='inputBoxdata' onChange={setPlaceholder} type="number" required id="placeholder-input" placeholder="Number" onblur="setPlaceholder(this)" />
+                                        <input className='inputBoxdata' onChange={setPlaceholder} type="number" required id="placeholder-input" placeholder="Some other number" onblur="setPlaceholder(this)" />
+                                        <div className="contButtonS">
+                                            <button>Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        }
 
+                        {(settinginformation == 3) &&
+                            <div className="conSubdata">
+                                <h3>Password:</h3>
+                                <div className="contBoxdatas">
+                                    <form>
+                                        <input className='inputBoxdata' type="password" required id="placeholder-input" placeholder="password" onblur="setPlaceholder(this)" />
+                                        <input className='inputBoxdata' type="password" required id="placeholder-input" placeholder="Confirm password" onblur="setPlaceholder(this)" />
+                                        <div className="contButtonS">
+                                            <button>Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        }
+
+                        {(settinginformation == 4) &&
+                            <div className="conSubdata">
+                                <h3>Email:</h3>
+                                <div className="contBoxdatas">
+                                    <form>
+                                        <input className='inputBoxdata' type="email" required id="placeholder-input" placeholder="Email" onblur="setPlaceholder(this)" />
+                                        <input className='inputBoxdata' type="email" required id="placeholder-input" placeholder="Confirm email" onblur="setPlaceholder(this)" />
+                                        <div className="contButtonS">
+                                            <button>Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        }
 
                     </div>
                 </div>
