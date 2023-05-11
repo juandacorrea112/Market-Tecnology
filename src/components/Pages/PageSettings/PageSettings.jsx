@@ -108,12 +108,23 @@ export const PageSettings = () => {
                         }
 
                         {(settinginformation == 2) &&
-                            <button className='contenedor-btn-file'>
-                                <span class="material-symbols-outlined">add_a_photo</span>
-                                attach image
-                                <label htmlFor="btn-file"></label>
-                                <input type="file" id='btn-file' />
-                            </button>
+                            <div className='conSubdata'>
+                                <h3>Picture profile:</h3>
+                                <div className="contBoxdatas">
+                                    <form>
+                                        <button className='contenedor-btn-file'>
+                                            <span class="material-symbols-outlined">add_a_photo</span>
+                                            attach image
+                                            <label htmlFor="btn-file"></label>
+                                            <input type="file" id='btn-file' />
+                                        </button>
+                                        <div className="contButtonS">
+                                            <button>Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
                         }
 
                         {(settinginformation == 3) &&
