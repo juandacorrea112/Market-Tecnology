@@ -107,6 +107,15 @@ export const PageSettings = () => {
                             </div>
                         }
 
+                        {(settinginformation == 2) &&
+                            <button className='contenedor-btn-file'>
+                                <span class="material-symbols-outlined">add_a_photo</span>
+                                attach image
+                                <label htmlFor="btn-file"></label>
+                                <input type="file" id='btn-file' />
+                            </button>
+                        }
+
                         {(settinginformation == 3) &&
                             <div className="conSubdata">
                                 <h3>Password:</h3>
