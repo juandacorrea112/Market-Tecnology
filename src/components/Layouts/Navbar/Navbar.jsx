@@ -84,10 +84,11 @@ export const Navbar = () => {
             </div>
             <ul class="sub-menu">
               <a class="link_name" href="/Perfil">Setting</a>
-              <li><a href="#">Name</a></li>
-              <li><a href="#">Last Name</a></li>
-              <li><a href="#">Email</a></li>
-              <li><a href="#">Password</a></li>
+              <li><a href="/Settings">Name</a></li>
+              <li><a href="/Settings">Phone</a></li>
+              <li><a href="/Settings">Profile picture</a></li>
+              <li><a href="/Settings">Password</a></li>
+              <li><a href="/Settings">Email</a></li>
             </ul>
           </li>
 
