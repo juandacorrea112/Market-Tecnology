@@ -152,13 +152,12 @@
 }
 .contenedor-btn-file {
   display: inline-block;
+  height: 100%;
   position: relative;
-  background-color: #186cc3;
+  /* background-color: #186cc3; */
+  background: transparent;
   color: white;
-  border: none;
   padding: 12px 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, .15);
   overflow: hidden;
   transition: ease-out 12ms;
   display: flex;
@@ -167,15 +166,16 @@
   gap: 15px;
 }
 .contenedor-btn-file:hover{
-  background-color: #165798;
+  background-color: #5d5d5d;
 }
 .contenedor-btn-file:focus{
-  background-color: #165798;
+  background-color: #5d5d5d;
 }
 .contenedor-btn-file > i {
   margin-right: 15px;
 }
 .contenedor-btn-file label {
+  border: solid 1px black;
   display: block;
   position: absolute;
   width: 100%;
@@ -184,4 +184,7 @@
   top: 0;
   left: 0;
   cursor: pointer;
+}
+.contenedor-btn-file span {
+  font-size: 120px;
 }

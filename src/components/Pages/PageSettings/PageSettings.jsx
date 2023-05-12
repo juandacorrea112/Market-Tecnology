@@ -114,7 +114,7 @@ export const PageSettings = () => {
                                     <form>
                                         <button className='contenedor-btn-file'>
                                             <span class="material-symbols-outlined">add_a_photo</span>
-                                            attach image
+                                            {/* attach image */}
                                             <label htmlFor="btn-file"></label>
                                             <input type="file" id='btn-file' />
                                         </button>
