@@ -98,7 +98,16 @@
 .headerProfileUser .navbar ul li a:hover {
   background-color: var(--main-color);
 }
-
+.infooptionsProfile {
+  width: 80%;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.infooptionsProfile::-webkit-scrollbar {
+  display: none;
+}
 
 .homeprofileperson {
   display: flex;
