@@ -23,11 +23,36 @@
 /* html{
   overflow-x: hidden;
 } */
+
+.body-profile {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-top: 29px;
+  padding-left: 5rem;
+}
+.btnprofileperson {
+  padding: .7rem 3rem;
+  background: #333;
+  color: var(--text-color);
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+  transition: .3s all;
+}
+.btnprofileperson i {
+  padding: 0 .5rem;
+  font-size: 1.8rem;
+}
+.btnprofileperson:hover {
+  background-color: var(--main-color);
+}
 .headerProfileUser {
   /* position: absolute; */
   top: 0; left: 0;
-  z-index: 1000;
-  height: 100vh;
+  /* z-index: 1000; */
+  height: 100%;
   margin-left: 6rem;
   width: 33rem;
   background: var(--bg-color);
@@ -74,19 +99,35 @@
   background-color: var(--main-color);
 }
 
-#menu{
-  position: fixed;
-  top: 2rem; right: 2rem;
-  background: #333;
-  color: #fff;
-  cursor: pointer;
+
+.homeprofileperson {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 0 15rem;
+  width: 80%;
+}
+.homeprofileperson h3 {
   font-size: 2.5rem;
-  padding: 1rem 1.5rem;
-  z-index: 1000;
-  display: none;
+  color: var(--text-color);
+}
+.homeprofileperson h1{
+  font-size:  5rem;
+  color: var(--text-color);
+}
+.body-profile .homeprofileperson{
+  min-height: 100vh;
+  padding: 5rem;
 }
 
-
+.homeprofileperson p{
+  font-size:  2rem;
+  padding: 1rem;
+  color: var(--text-color);
+}
+.homeprofileperson h1 span {
+  color: var(--main-color);
+}
 /*MEDIA QUERY*/
 
 /*======= queda pendiente =======*/
