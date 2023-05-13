@@ -73,3 +73,33 @@
 .headerProfileUser .navbar ul li a:hover {
   background-color: var(--main-color);
 }
+
+#menu{
+  position: fixed;
+  top: 2rem; right: 2rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+
+
+/*MEDIA QUERY*/
+
+/*======= queda pendiente =======*/
+
+/* @media (max-width:991px) {
+  .headerProfileUser {
+    left: -120%;
+  }
+  #menu {
+    display: block;
+  }
+
+  .headerProfileUser.toggle{
+    left: 0%;
+  }
+} */

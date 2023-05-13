@@ -6,6 +6,8 @@ import girlProfile from '../../../images/perfiles/girlProfile.jpg'
 import './PageProfile.css'
 
 export const PageProfile = () => {
+
+  
   return (
     <>
       <header className='headerProfileUser'>
@@ -24,11 +26,11 @@ export const PageProfile = () => {
           </ul>
         </nav>
       </header>
+
+
+      <div id='menu' className="fas fa-bars">
+
+      </div>
     </>
   )
 }
-{/* <ul>
-  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-</ul> */}
