@@ -53,6 +53,31 @@ export const PageProfile = () => {
               <h3><span> calification : </span> very god </h3>
               <a href="#"><button className='btnprofileperson'>download CV <i className="fas fa-download"></i></button></a>
             </div>
+
+            <div className="counterprofileperson">
+              <div className="boxprofileperson">
+                <span>2+</span>
+                <h3>years of experience</h3>
+              </div>
+
+
+              <div className="boxprofileperson">
+                <span>100+</span>
+                <h3>porject completed</h3>
+              </div>
+
+
+              <div className="boxprofileperson">
+                <span>430+</span>
+                <h3>happy clients</h3>
+              </div>
+
+
+              <div className="boxprofileperson">
+                <span>12+</span>
+                <h3>awards</h3>
+              </div>
+            </div>
           </div>
         </section>
       </div>

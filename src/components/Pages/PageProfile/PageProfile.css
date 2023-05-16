@@ -48,6 +48,14 @@
 .btnprofileperson:hover {
   background-color: var(--main-color);
 }
+.heading{
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 4rem;
+  padding: 1rem;
+  border-bottom: .1rem solid #fff4;
+  color: #fff;
+}
 .headerProfileUser {
   /* position: absolute; */
   top: 0; left: 0;
@@ -136,6 +144,13 @@
 }
 .homeprofileperson h1 span {
   color: var(--main-color);
+}
+.aboutProf .rowProf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
 }
 /*MEDIA QUERY*/
 
