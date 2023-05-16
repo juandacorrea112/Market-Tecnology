@@ -1,1 +1,1 @@
-<img src="./src/images/icons/ReadmeMarketNew.PNG" alt="" />
+<img src="./src/images/icons/CapturaMarkettecnology.PNG" alt="" />
