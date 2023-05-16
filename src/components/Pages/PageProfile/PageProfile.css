@@ -152,6 +152,45 @@
   flex-wrap: wrap;
   padding: 1rem 0;
 }
+.aboutProf .rowProf .infoProf {
+  flex: 1 1 48rem;
+  padding: 2rem 1rem;
+  padding-left: 6rem;
+}
+
+.aboutProf .rowProf .infoProf h3 {
+  font-size: 2rem;
+  color: var(--main-color);
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
+.aboutProf .rowProf .infoProf h3 span {
+  color: var(--text-color);
+  padding: 0 .5rem;
+}
+
+.aboutProf .rowProf .counterprofileperson {
+  flex: 1 1 48rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.aboutProf .rowProf .counterprofileperson .boxprofileperson {
+  width: 20rem;
+  background: #222;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+.aboutProf .rowProf .counterprofileperson .boxprofileperson span {
+  font-size: 4rem;
+  color: var(--main-color);
+}
+.aboutProf .rowProf .counterprofileperson .boxprofileperson h3{
+  font-size: 2rem;
+  color: var(--main-color);
+}
 /*MEDIA QUERY*/
 
 /*======= queda pendiente =======*/
