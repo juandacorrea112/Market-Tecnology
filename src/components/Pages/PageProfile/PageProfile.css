@@ -195,15 +195,52 @@
 
 /*======= queda pendiente =======*/
 
-/* @media (max-width:991px) {
-  .headerProfileUser {
-    left: -120%;
+@media (max-width:991px) {
+  .body-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 12vh; */
   }
-  #menu {
-    display: block;
+  .headerProfileUser{
+    width: 100vw;
   }
-
-  .headerProfileUser.toggle{
-    left: 0%;
+  .heading{ 
+    margin: 0 3rem;
   }
+  .aboutProf .rowProf .counterprofileperson .boxprofileperson{
+    width: 100%;
+  }
+}
+.portafolio{
+  margin-top: 15rem;
+}
+.portafolio .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+.portafolio .box-container .boxprofileperson {
+  height: 20rem;
+  width: 26rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.portafolio .box-container .boxprofileperson img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .1s all;
+}
+.portafolio .box-container .boxprofileperson:hover img{
+  transform: scale(1.2);
+  transition: .1s all;
+}
+/* @media (max-width:400px) {
+  
 } */

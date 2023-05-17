@@ -2,7 +2,12 @@ import React from 'react'
 import $ from 'jquery';
 
 import girlProfile from '../../../images/perfiles/girlProfile.jpg'
-// import calularProducto from '../../../images/productos/calularProducto.jpg'
+import calularProducto from '../../../images/productos/calularProducto.jpg'
+import cellProducto from '../../../images/productos/cellProducto.jpg'
+import ctUppc from '../../../images/productos/ctUppc.jpg'
+import dobolWindow from '../../../images/productos/dobolWindow.jpg'
+import pcMack from '../../../images/productos/pcMack.jpg'
+import pcProductoVenta from '../../../images/productos/pcProductoVenta.jpg'
 import './PageProfile.css'
 
 export const PageProfile = () => {
@@ -21,7 +26,7 @@ export const PageProfile = () => {
           <ul>
             <li><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
-            <li><a href="#home">Portfolio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#home">Contact</a></li>
           </ul>
         </nav>
@@ -77,6 +82,37 @@ export const PageProfile = () => {
                 <span>12+</span>
                 <h3>awards</h3>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* portafolio section */}
+        <section className='portafolio' id='portfolio'>
+          <h1 className="heading"> My <span>portfolio</span></h1>
+
+          <div className="box-container">
+            <div className="boxprofileperson">
+              <img src={calularProducto} alt={calularProducto} />
+            </div>
+
+            <div className="boxprofileperson">
+              <img src={cellProducto} alt={cellProducto} />
+            </div>
+
+            <div className="boxprofileperson">
+              <img src={ctUppc} alt={ctUppc} />
+            </div>
+
+            <div className="boxprofileperson">
+              <img src={dobolWindow} alt={dobolWindow} />
+            </div>
+
+            <div className="boxprofileperson">
+              <img src={pcMack} alt={pcMack} />
+            </div>
+
+            <div className="boxprofileperson">
+              <img src={pcProductoVenta} alt={pcProductoVenta} />
             </div>
           </div>
         </section>
