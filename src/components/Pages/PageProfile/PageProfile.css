@@ -241,6 +241,66 @@
   transform: scale(1.2);
   transition: .1s all;
 }
+
+/*contact*/
+.contact{
+  margin-top: 30rem;
+}
+.contact .rowProf{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+.contact .rowProf .content {
+  flex: 1 1 30rem;
+  padding: 4rem;
+  padding-bottom: 0;
+}
+.contact .rowProf form {
+  flex: 1 1 45rem;
+  padding: 2rem;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+.contact .rowProf form .box {
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #3333;
+  color: var(--text-color);
+  text-transform: none;
+  font-size: 1.7rem;
+  width: 100%;
+}
+
+.contact .rowProf form .box::placeholder{
+  text-transform: capitalize;
+}
+
+.contact .rowProf form .message {
+  height: 15rem;
+  resize: none;
+}
+.contact .rowProf .content .title{
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+.contact .rowProf .content .info h3{
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--text-color);
+  padding: 1rem 0;
+  font-weight: normal;
+}
+.contact .rowProf .content .info h3 i{
+  padding-right: 1rem;
+  color: var(--main-color);
+
+}
 /* @media (max-width:400px) {
   
 } */

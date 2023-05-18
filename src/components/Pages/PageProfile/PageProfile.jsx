@@ -27,7 +27,7 @@ export const PageProfile = () => {
             <li><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#home">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -115,6 +115,33 @@ export const PageProfile = () => {
               <img src={pcProductoVenta} alt={pcProductoVenta} />
             </div>
           </div>
+        </section>
+
+        {/* ------- contact ------- */}
+        <section id='contact' className='contact'>
+          <h1 className="heading"> My <span>contact</span></h1>
+
+          <div className="rowProf">
+            <div className="content">
+              <h3 className='title'>contact info</h3>
+
+              <div className="info">
+                <h3> <i className='fas fa-envelope'></i> shaikh@gmail.com </h3>
+                <h3> <i className='fas fa-phone'></i> +123-456-7890 </h3>
+                <h3> <i className='fas fa-phone'></i> +111-222-3333 </h3>
+                <h3> <i className='fas fa-map-marker-alt'></i> mumbai, india - 400104 </h3>
+              </div>
+            </div>
+
+            <form action="">
+              <input type="text" placeholder='name' required className='box'/>
+              <input type="email" placeholder='email' required className='box'/>
+              <input type="text" placeholder='project'required className='box'/>
+              <textarea name="" id="" cols="30" rows="10" required className='box message' placeholder='message'></textarea>
+              <button type='sumbit' className='btn'> send <i className='fas fa-paper-plane'></i></button>
+            </form>
+          </div>
+
         </section>
       </div>
 
