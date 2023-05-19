@@ -149,11 +149,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding: 1rem 0;
 }
 .aboutProf .rowProf .infoProf {
-  flex: 1 1 48rem;
+  flex: 0 1 28rem;
   padding: 2rem 1rem;
   padding-left: 6rem;
 }
@@ -177,7 +177,7 @@
   flex-wrap: wrap;
 }
 .aboutProf .rowProf .counterprofileperson .boxprofileperson {
-  width: 20rem;
+  width: 15rem;
   background: #222;
   text-align: center;
   padding: 2rem;
@@ -244,7 +244,7 @@
 
 /*contact*/
 .contact{
-  margin-top: 30rem;
+  margin-top: 25rem;
 }
 .contact .rowProf{
   display: flex;
