@@ -54,10 +54,10 @@ export const Navbar = () => {
           <li>
             <a href="#">
               <i class='bx bx-grid-alt' ></i>
-              <span class="link_name">Uploaded products</span>
+              <span class="link_name">Sellers</span>
             </a>
             <ul class="sub-menu blank">
-              <li><a class="link_name" href="#">Uploaded products</a></li>
+              <li><a class="link_name" href="#">Sellers</a></li>
             </ul>
           </li>
           <li>
