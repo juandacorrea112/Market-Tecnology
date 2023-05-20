@@ -52,12 +52,12 @@ export const Navbar = () => {
             </ul>
           </li>
           <li>
-            <a href="#">
+            <a href="/PageSearch">
               <i class='bx bx-grid-alt' ></i>
               <span class="link_name">Sellers</span>
             </a>
             <ul class="sub-menu blank">
-              <li><a class="link_name" href="#">Sellers</a></li>
+              <li><a class="link_name" href="/PageSearch">Sellers</a></li>
             </ul>
           </li>
           <li>
