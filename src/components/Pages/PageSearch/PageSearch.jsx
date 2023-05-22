@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
 import './PageSearch.css'
+import { error } from 'jquery'
 
 export const PageSearch = () => {
+
+    const apipruebaTemporal = 'https://rickandmortyapi.com/api/character'
+
+   useEffect(() => {
+    fetch(apipruebaTemporal)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.log('Error', error);
+        })
+   }, [])
+
     return (
         <div className='BigcontentSeacrh'>
             <div className="contComponentsS">
@@ -16,7 +32,6 @@ export const PageSearch = () => {
                                 </svg>
                             </a>
                     </div>
-
 
                 </div>
             </div>
