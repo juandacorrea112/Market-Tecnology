@@ -63,7 +63,7 @@ export const Navbar = () => {
           <li>
             <div class="iocn-link">
               <a href="#">
-                <i class='bx bx-collection' ></i>
+                <span id='simbolProducts' class="material-symbols-outlined">computer</span>
                 <span class="link_name">Products</span>
               </a>
 

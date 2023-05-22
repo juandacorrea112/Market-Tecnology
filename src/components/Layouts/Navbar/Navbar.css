@@ -9,6 +9,13 @@
 #simbolPerfil {
   margin-left: 26px;
   height: 40px;
+  margin-top: 15px
+}
+#simbolProducts {
+  margin-left: 26px;
+  height: 40px;
+  color: white;
+  margin-top: 15px;
 }
 #anclIcon {
   gap: 30px;
