@@ -62,14 +62,14 @@ export const Navbar = () => {
           </li>
           <li>
             <div class="iocn-link">
-              <a href="#">
+              <a href="/PageSearch">
                 <span id='simbolProducts' class="material-symbols-outlined">computer</span>
                 <span class="link_name">Products</span>
               </a>
 
             </div>
             <ul class="sub-menu">
-              <li><a class="link_name" href="#">Products</a></li>
+              <li><a class="link_name" href="/PageSearch">Products</a></li>
               <li><a href="#">Computer</a></li>
               <li><a href="#">cell phones</a></li>
               <li><a href="#">Search</a></li>
