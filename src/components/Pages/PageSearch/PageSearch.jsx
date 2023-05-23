@@ -12,6 +12,8 @@ export const PageSearch = () => {
 
     const apipruebaTemporal = 'https://rickandmortyapi.com/api/character'
 
+    const [seacrh, setSearch] = useState()
+
     useEffect(() => {
         fetch(apipruebaTemporal)
             .then(response => response.json())
@@ -23,15 +25,29 @@ export const PageSearch = () => {
             })
     }, [])
 
+
+    const activeSeacrh = () => {
+        const searchProduct = document.getElementById('searchProduct')
+
+        if (seacrh == 0) {
+            setSearch(1)
+            searchProduct.classList.toggle('searchProductActive')
+        }
+        else if (seacrh == 1) {
+            setSearch(0)
+            searchProduct.classList.toggle('searchProductActive')
+        }
+    }
+
     return (
         <div className='BigcontentSeacrh'>
             <div className="contComponentsS">
                 <h1 className='tittle'>search for vendors or <span>products</span></h1>
                 <div className="contBoxsearcher">
 
-                    <div class="search-box">
-                        <input className='searchProduct' type="text" placeholder='Seacrh...' />
-                        <a href="##" class="material-symbols-outlined">
+                    <div onClick={activeSeacrh} class="search-box">
+                        <input id='searchProduct' className='searchProduct' type="text" placeholder='Seacrh...' />
+                        <a href="#" class="material-symbols-outlined">
                             <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                             </svg>
@@ -47,7 +63,7 @@ export const PageSearch = () => {
                             <span>2 minutes!</span>
                         </span>
                         <span class="card__action">
-                        <a href="#">
+                            <a href="#">
                                 <span class="material-symbols-outlined">
                                     visibility
                                 </span>
@@ -62,7 +78,7 @@ export const PageSearch = () => {
                             <span>2 minutes!</span>
                         </span>
                         <span class="card__action">
-                        <a href="#">
+                            <a href="#">
                                 <span class="material-symbols-outlined">
                                     visibility
                                 </span>
