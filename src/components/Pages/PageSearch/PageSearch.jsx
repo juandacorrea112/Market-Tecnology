@@ -13,7 +13,7 @@ export const PageSearch = () => {
     const apipruebaTemporal = 'https://rickandmortyapi.com/api/character'
 
     const [seacrh, setSearch] = useState()
-
+    
     useEffect(() => {
         fetch(apipruebaTemporal)
             .then(response => response.json())
@@ -63,7 +63,7 @@ export const PageSearch = () => {
                             <span>2 minutes!</span>
                         </span>
                         <span class="card__action">
-                            <a href="#">
+                        <a href="#">
                                 <span class="material-symbols-outlined">
                                     visibility
                                 </span>
@@ -78,7 +78,7 @@ export const PageSearch = () => {
                             <span>2 minutes!</span>
                         </span>
                         <span class="card__action">
-                            <a href="#">
+                        <a href="#">
                                 <span class="material-symbols-outlined">
                                     visibility
                                 </span>
