@@ -12,13 +12,16 @@ export const PageSearch = () => {
 
     const apipruebaTemporal = 'https://rickandmortyapi.com/api/character'
 
+    const [character, setCharacter] = useState([])
+
     const [seacrh, setSearch] = useState()
-    
+
     useEffect(() => {
         fetch(apipruebaTemporal)
             .then(response => response.json())
             .then(data => {
-                console.log(data);
+                setCharacter(data.results)
+                console.log(character);
             })
             .catch(error => {
                 console.log('Error', error);
@@ -56,14 +59,32 @@ export const PageSearch = () => {
 
                 </div>
                 <div className="BoxCards-P-and-S">
-                    <div href="#" class="card">
+
+                    {character.map((dat) => (
+                        <div key={dat.id} href="#" class="card">
+                            <img src={dat.image} alt="..." className='card__img' />
+                            <span class="card__footer">
+                                <span>{dat.name}</span>
+                                <span>{dat.species}</span>
+                            </span>
+                            <span class="card__action">
+                                <a href="#">
+                                    <span class="material-symbols-outlined">
+                                        visibility
+                                    </span>
+                                </a>
+                            </span>
+                        </div>
+                    ))}
+
+                    {/* <div href="#" class="card">
                         <img src={calularProducto} alt="..." className='card__img' />
                         <span class="card__footer">
                             <span>Awesome speedy card</span>
                             <span>2 minutes!</span>
                         </span>
                         <span class="card__action">
-                        <a href="#">
+                            <a href="#">
                                 <span class="material-symbols-outlined">
                                     visibility
                                 </span>
@@ -78,7 +99,7 @@ export const PageSearch = () => {
                             <span>2 minutes!</span>
                         </span>
                         <span class="card__action">
-                        <a href="#">
+                            <a href="#">
                                 <span class="material-symbols-outlined">
                                     visibility
                                 </span>
@@ -144,7 +165,7 @@ export const PageSearch = () => {
                                 </span>
                             </a>
                         </span>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
