@@ -9,14 +9,22 @@ import './PageSearch.css'
 import { error } from 'jquery'
 
 export const PageSearch = () => {
-
+    /*=============     API DE PRUEBA      ===================*/
     const apipruebaTemporal = 'https://rickandmortyapi.com/api/character'
+
+    // optener el input para comprobar cuando esta vacio y cuando no
+    const searchProduct = document.getElementById('searchProduct')
+
+    //aqui logro controlar el dom para que pinte las cards de los "productos"
+    const [loadChatacter, setLoadChatacter] = useState()
+
+
 
     const [character, setCharacter] = useState([])
 
-    const [seacrh, setSearch] = useState()
 
     useEffect(() => {
+        setLoadChatacter(0)
         fetch(apipruebaTemporal)
             .then(response => response.json())
             .then(data => {
@@ -28,19 +36,30 @@ export const PageSearch = () => {
             })
     }, [])
 
+    const [searchRick, setSearchRick] = useState(character)
 
-    const activeSeacrh = () => {
-        const searchProduct = document.getElementById('searchProduct')
 
-        if (seacrh == 0) {
-            setSearch(1)
-            searchProduct.classList.toggle('searchProductActive')
-        }
-        else if (seacrh == 1) {
-            setSearch(0)
-            searchProduct.classList.toggle('searchProductActive')
-        }
+    // const personajes = character.filter(dat => dat.name.toUpperCase().includes())
+
+    const searchCharacter = (e) => {
+        setLoadChatacter(1)
+        const data = e.target.value
+        const filter = character.filter(rick => rick.name.includes(data))
+        setSearchRick(filter)
+
     }
+
+    // const activeSeacrh = () => {
+
+    //     if (seacrh == 0) {
+    //         setSearch(1)
+    //         searchProduct.classList.toggle('searchProductActive')
+    //     }
+    //     else if (seacrh == 1) {
+    //         setSearch(0)
+    //         searchProduct.classList.toggle('searchProductActive')
+    //     }
+    // }
 
     return (
         <div className='BigcontentSeacrh'>
@@ -48,8 +67,8 @@ export const PageSearch = () => {
                 <h1 className='tittle'>search for vendors or <span>products</span></h1>
                 <div className="contBoxsearcher">
 
-                    <div onClick={activeSeacrh} class="search-box">
-                        <input id='searchProduct' className='searchProduct' type="text" placeholder='Seacrh...' />
+                    <div class="search-box">
+                        <input onChange={searchCharacter} id='searchProduct' className='searchProduct' type="text" placeholder='Seacrh...' />
                         <a href="#" class="material-symbols-outlined">
                             <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
@@ -60,7 +79,26 @@ export const PageSearch = () => {
                 </div>
                 <div className="BoxCards-P-and-S">
 
-                    {character.map((dat) => (
+                    {(loadChatacter == 0) &&
+                        character.map((dat) => (
+                            <div key={dat.id} href="#" class="card">
+                                <img src={dat.image} alt="..." className='card__img' />
+                                <span class="card__footer">
+                                    <span>{dat.name}</span>
+                                    <span>{dat.species}</span>
+                                </span>
+                                <span class="card__action">
+                                    <a href="#">
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+                                    </a>
+                                </span>
+                            </div>
+                        ))
+                    }
+
+                    {searchRick.map((dat) => (
                         <div key={dat.id} href="#" class="card">
                             <img src={dat.image} alt="..." className='card__img' />
                             <span class="card__footer">
