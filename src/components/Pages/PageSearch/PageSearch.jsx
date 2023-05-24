@@ -44,7 +44,7 @@ export const PageSearch = () => {
     const searchCharacter = (e) => {
         setLoadChatacter(1)
         const data = e.target.value
-        const filter = character.filter(rick => rick.name.includes(data))
+        const filter = character.filter(rick => rick.name.toLowerCase().includes(data))
         setSearchRick(filter)
 
     }
