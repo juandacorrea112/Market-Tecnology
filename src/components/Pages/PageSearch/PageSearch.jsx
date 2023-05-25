@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import calularProducto from '../../../images/productos/calularProducto.jpg'
-import ctUppc from '../../../images/productos/ctUppc.jpg'
-import pcProductoVenta from '../../../images/productos/pcProductoVenta.jpg'
-import cellProducto from '../../../images/productos/cellProducto.jpg'
-import dobolWindow from '../../../images/productos/dobolWindow.jpg'
-import pcMack from '../../../images/productos/pcMack.jpg'
+import { getAllProducts } from '../../../Helpers/getAllProducts'
+
+// import calularProducto from '../../../images/productos/calularProducto.jpg'
+// import ctUppc from '../../../images/productos/ctUppc.jpg'
+// import pcProductoVenta from '../../../images/productos/pcProductoVenta.jpg'
+// import cellProducto from '../../../images/productos/cellProducto.jpg'
+// import dobolWindow from '../../../images/productos/dobolWindow.jpg'
+// import pcMack from '../../../images/productos/pcMack.jpg'
+
 import './PageSearch.css'
 import { error } from 'jquery'
 
@@ -49,17 +52,7 @@ export const PageSearch = () => {
 
     }
 
-    // const activeSeacrh = () => {
 
-    //     if (seacrh == 0) {
-    //         setSearch(1)
-    //         searchProduct.classList.toggle('searchProductActive')
-    //     }
-    //     else if (seacrh == 1) {
-    //         setSearch(0)
-    //         searchProduct.classList.toggle('searchProductActive')
-    //     }
-    // }
 
     return (
         <div className='BigcontentSeacrh'>
