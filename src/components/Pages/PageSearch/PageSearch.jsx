@@ -9,7 +9,7 @@ import { getAllProducts } from '../../../Helpers/getAllProducts'
 // import pcMack from '../../../images/productos/pcMack.jpg'
 
 import './PageSearch.css'
-import { error } from 'jquery'
+// import { error } from 'jquery'
 
 export const PageSearch = () => {
     /*=============     API DE PRUEBA      ===================*/
@@ -28,22 +28,20 @@ export const PageSearch = () => {
 
     useEffect(() => {
         setLoadChatacter(0)
-        fetch(apipruebaTemporal)
-            .then(response => response.json())
-            .then(data => {
-                setCharacter(data.results)
-                console.log(character);
-            })
-            .catch(error => {
-                console.log('Error', error);
-            })
-    }, [])
+        getAllProducts()
+        .then(data => {
+            setCharacter(data.results)
+        })
+        .catch(error => {
+            console.log('Error:', error);
+        })
+    },[])
 
+
+    // Este useState lo uso para asignarle los valores pero filtrados por el nombre
     const [searchRick, setSearchRick] = useState(character)
 
-
-    // const personajes = character.filter(dat => dat.name.toUpperCase().includes())
-
+    //funcion para filtrar los valores que coincidan con el valor del input
     const searchCharacter = (e) => {
         setLoadChatacter(1)
         const data = e.target.value
@@ -107,96 +105,6 @@ export const PageSearch = () => {
                             </span>
                         </div>
                     ))}
-
-                    {/* <div href="#" class="card">
-                        <img src={calularProducto} alt="..." className='card__img' />
-                        <span class="card__footer">
-                            <span>Awesome speedy card</span>
-                            <span>2 minutes!</span>
-                        </span>
-                        <span class="card__action">
-                            <a href="#">
-                                <span class="material-symbols-outlined">
-                                    visibility
-                                </span>
-                            </a>
-                        </span>
-                    </div>
-
-                    <div href="#" class="card">
-                        <img src={ctUppc} alt="..." className='card__img' />
-                        <span class="card__footer">
-                            <span>Awesome speedy card</span>
-                            <span>2 minutes!</span>
-                        </span>
-                        <span class="card__action">
-                            <a href="#">
-                                <span class="material-symbols-outlined">
-                                    visibility
-                                </span>
-                            </a>
-                        </span>
-                    </div>
-
-                    <div href="#" class="card">
-                        <img src={pcProductoVenta} alt="..." className='card__img' />
-                        <span class="card__footer">
-                            <span>Awesome speedy card</span>
-                            <span>2 minutes!</span>
-                        </span>
-                        <span class="card__action">
-                            <a href="#">
-                                <span class="material-symbols-outlined">
-                                    visibility
-                                </span>
-                            </a>
-                        </span>
-                    </div>
-
-                    <div href="#" class="card">
-                        <img src={cellProducto} alt="..." className='card__img' />
-                        <span class="card__footer">
-                            <span>Awesome speedy card</span>
-                            <span>2 minutes!</span>
-                        </span>
-                        <span class="card__action">
-                            <a href="#">
-                                <span class="material-symbols-outlined">
-                                    visibility
-                                </span>
-                            </a>
-                        </span>
-                    </div>
-
-                    <div href="#" class="card">
-                        <img src={dobolWindow} alt="..." className='card__img' />
-                        <span class="card__footer">
-                            <span>Awesome speedy card</span>
-                            <span>2 minutes!</span>
-                        </span>
-                        <span class="card__action">
-                            <a href="#">
-                                <span class="material-symbols-outlined">
-                                    visibility
-                                </span>
-                            </a>
-                        </span>
-                    </div>
-
-                    <div class="card">
-                        <img src={pcMack} alt="..." className='card__img' />
-                        <span class="card__footer">
-                            <span>Awesome speedy card</span>
-                            <span>2 minutes!</span>
-                        </span>
-                        <span class="card__action">
-                            <a href="#">
-                                <span class="material-symbols-outlined">
-                                    visibility
-                                </span>
-                            </a>
-                        </span>
-                    </div> */}
                 </div>
             </div>
         </div>
