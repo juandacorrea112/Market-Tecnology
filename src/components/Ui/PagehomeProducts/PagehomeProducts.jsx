@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { getHomeProduct } from '../../../Helpers/getAllProducts'
+import { fetchData } from '../../../Helpers/getAllProducts'
 import ScrollReveal from 'scrollreveal'
 import pcMack from '../../../images/productos/pcMack.jpg'
 import ctUppc from '../../../images/productos/ctUppc.jpg'
@@ -11,7 +11,7 @@ export const PagehomeProducts = () => {
 
     const [character, setCharacter] = useState([])
 
-    
+
     //====== EJECUCION DE HELPER PARA CONSUMO DE API =========
 
     useEffect(() => {
@@ -19,12 +19,12 @@ export const PagehomeProducts = () => {
         scrollFunction()
 
         //ejecutamos helper de metodo GET
-        getHomeProduct()
-            .then(data => {
-                setCharacter(data)
+        fetchData()
+            .then(responseData => {
+                setCharacter(responseData.results)
             })
             .catch(error => {
-                console.log('Error:', error);
+                console.log('Error: ', error);
             })
         console.log(character);
     }, [])
@@ -46,7 +46,7 @@ export const PagehomeProducts = () => {
         ScrollReveal().reveal('.heading', { origin: 'top' })
         ScrollReveal().reveal('.portfolio-box', { origin: 'bottom' })
     }
-    
+
 
     return (
         <>
@@ -55,17 +55,23 @@ export const PagehomeProducts = () => {
                 <h2 className='heading'>Latest <span>Project</span></h2>
 
                 <div className="portfolio-container">
-                    <div className="portfolio-box">
-                        <img src={pcProductoVenta} alt={pcProductoVenta} />
-                        <div className="portfolio-layer">
-                            <h4>Web Desing</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo assumenda non error, temporibus, ducimus consequuntur itaque laudantium nulla laborum, dicta laboriosam nesciunt ipsam magni voluptas.
-                                A voluptatum soluta dicta dolorem.</p>
-                            <a href="#"><i class='bx bx-link-external'></i></a>
-                        </div>
-                    </div>
 
-                    <div className="portfolio-box">
+                    {character.map((dat) => (
+                        <div className="portfolio-box">
+                            <img src={dat.image} alt='...' />
+                            <div className="portfolio-layer">
+                                <h4>Web Desing</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo assumenda non error, temporibus, ducimus consequuntur itaque laudantium nulla laborum, dicta laboriosam nesciunt ipsam magni voluptas.
+                                    A voluptatum soluta dicta dolorem.</p>
+                                <a href="#"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+
+                    ))}
+
+
+
+                    {/* <div className="portfolio-box">
                         <img src={pcMack} alt={pcMack} />
                         <div className="portfolio-layer">
                             <h4>Web Desing</h4>
@@ -113,7 +119,7 @@ export const PagehomeProducts = () => {
                                 A voluptatum soluta dicta dolorem.</p>
                             <a href="#"><i class='bx bx-link-external'></i></a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </>

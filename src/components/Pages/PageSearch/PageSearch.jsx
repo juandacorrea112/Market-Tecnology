@@ -12,8 +12,6 @@ import './PageSearch.css'
 // import { error } from 'jquery'
 
 export const PageSearch = () => {
-    /*=============     API DE PRUEBA      ===================*/
-    const apipruebaTemporal = 'https://rickandmortyapi.com/api/character'
 
     // optener el input para comprobar cuando esta vacio y cuando no
     const searchProduct = document.getElementById('searchProduct')

@@ -18,10 +18,10 @@ export const getAllProducts = () => {
 
 }
 
-export const getHomeProduct = () => {
+export const fetchData = () => {
     return axios.get(urlhometemporal)
-        .then(response => response.data)
-        .catch(error => {
-            console.log('Error:', error);
-        })
+    .then(response => response.data)
+    .catch(error => {
+        console.log('Error: ',error);
+    })
 }
