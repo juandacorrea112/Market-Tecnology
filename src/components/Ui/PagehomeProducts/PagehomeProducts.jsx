@@ -60,7 +60,7 @@ export const PagehomeProducts = () => {
                         <div className="portfolio-box">
                             <img src={dat.image} alt='...' />
                             <div className="portfolio-layer">
-                                <h4>Web Desing</h4>
+                                <h4>{dat.name}</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo assumenda non error, temporibus, ducimus consequuntur itaque laudantium nulla laborum, dicta laboriosam nesciunt ipsam magni voluptas.
                                     A voluptatum soluta dicta dolorem.</p>
                                 <a href="#"><i class='bx bx-link-external'></i></a>
