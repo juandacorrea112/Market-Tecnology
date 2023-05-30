@@ -13,9 +13,6 @@ import './PageSearch.css'
 
 export const PageSearch = () => {
 
-    // optener el input para comprobar cuando esta vacio y cuando no
-    const searchProduct = document.getElementById('searchProduct')
-
     //aqui logro controlar el dom para que pinte las cards de los "productos"
     const [loadChatacter, setLoadChatacter] = useState()
 
@@ -27,17 +24,18 @@ export const PageSearch = () => {
     useEffect(() => {
         setLoadChatacter(0)
         getAllProducts()
-        .then(data => {
-            setCharacter(data.results)
-        })
-        .catch(error => {
-            console.log('Error:', error);
-        })
-    },[])
+            .then(data => {
+                setCharacter(data.results)
+            })
+            .catch(error => {
+                console.log('Error:', error);
+            })
+    }, [])
 
 
     // Este useState lo uso para asignarle los valores pero filtrados por el nombre
     const [searchRick, setSearchRick] = useState(character)
+    const [searchProduct, setSearchProduct] = useState(character)
 
     //funcion para filtrar los valores que coincidan con el valor del input
     const searchCharacter = (e) => {
@@ -46,6 +44,9 @@ export const PageSearch = () => {
         const filter = character.filter(rick => rick.name.toLowerCase().includes(data))
         setSearchRick(filter)
 
+        const dato = e.target.value
+        const filtro = character.filter(prod => prod.species.toLowerCase().includes(dato))
+        setSearchProduct(filtro)
     }
 
 
@@ -88,6 +89,23 @@ export const PageSearch = () => {
                     }
 
                     {searchRick.map((dat) => (
+                        <div key={dat.id} href="#" class="card">
+                            <img src={dat.image} alt="..." className='card__img' />
+                            <span class="card__footer">
+                                <span>{dat.name}</span>
+                                <span>{dat.species}</span>
+                            </span>
+                            <span class="card__action">
+                                <a href="#">
+                                    <span class="material-symbols-outlined">
+                                        visibility
+                                    </span>
+                                </a>
+                            </span>
+                        </div>
+                    ))}
+
+                    {searchProduct.map((dat) => (
                         <div key={dat.id} href="#" class="card">
                             <img src={dat.image} alt="..." className='card__img' />
                             <span class="card__footer">
