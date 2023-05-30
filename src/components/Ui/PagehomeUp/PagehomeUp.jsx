@@ -10,19 +10,19 @@ export const PagehomeUp = () => {
   useEffect(() => {
 
     ScrollReveal({
-      
+
       // reset: true,
       distance: '80px',
       duration: 2000,
       delay: 200
-      
+
     });
 
-    ScrollReveal().reveal('.home-content', {origin: 'top'})
-    ScrollReveal().reveal('.home-content h1', {origin: 'left'})
-    ScrollReveal().reveal('.home-content p', {origin: 'right'})
-    ScrollReveal().reveal('.home-img', {origin: 'bottom'})
-  },[])
+    ScrollReveal().reveal('.home-content', { origin: 'top' })
+    ScrollReveal().reveal('.home-content h1', { origin: 'left' })
+    ScrollReveal().reveal('.home-content p', { origin: 'right' })
+    ScrollReveal().reveal('.home-img', { origin: 'bottom' })
+  }, [])
 
 
   /* ========== Typed js ========== */
@@ -44,9 +44,9 @@ export const PagehomeUp = () => {
       // Limpiar la instancia de Typed.js al desmontar el componente
       typed.destroy()
     }
-  },[])
+  }, [])
 
-  
+
   /* === ACTIVACION DE SCROLL PARA SECCIONES === */
 
   let sections = document.querySelectorAll('section')
@@ -81,14 +81,16 @@ export const PagehomeUp = () => {
           <h3>
             <span ref={typedRef}></span>
           </h3>
-          <p>You can create your own profile and thus buy or sell 
-            your products on our website very easily.</p>
-           <div className="social-media">
+          <p>You can create your own profile and thus buy or sell
+            your products on our website very easily.
+          </p>
+          <div className="social-media">
             <a href="https://www.facebook.com/juandavid.corra.5/"><i class='bx bxl-facebook'></i></a>
             <a href="https://www.instagram.com/juandavidc02_bmx/?next=%2F"><i class='bx bxl-instagram' ></i></a>
             <a href="https://github.com/juandacorrea112"><i class='bx bxl-github' ></i></a>
-           </div>
-           <a href="/Registro" className='btn'>Register</a>
+          </div>
+          <a href="/Registro" className='btn'>Register</a>
+          <a href="/Login" className='btn'>Login</a>
         </div>
 
         <div className="home-img">
