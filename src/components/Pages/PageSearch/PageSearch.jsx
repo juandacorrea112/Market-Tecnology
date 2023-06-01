@@ -9,6 +9,7 @@ import { getAllProducts } from '../../../Helpers/getAllProducts'
 // import pcMack from '../../../images/productos/pcMack.jpg'
 
 import './PageSearch.css'
+import { data } from 'jquery'
 // import { error } from 'jquery'
 
 export const PageSearch = () => {
@@ -69,44 +70,7 @@ export const PageSearch = () => {
                 </div>
                 <div className="BoxCards-P-and-S">
 
-                    {/*
-
-                    {searchRick.map((dat) => (
-                        <div key={dat.id} href="#" class="card">
-                            <img src={dat.image} alt="..." className='card__img' />
-                            <span class="card__footer">
-                                <span>{dat.name}</span>
-                                <span>{dat.species}</span>
-                            </span>
-                            <span class="card__action">
-                                <a href="#">
-                                    <span class="material-symbols-outlined">
-                                        visibility
-                                    </span>
-                                </a>
-                            </span>
-                        </div>
-                    ))}
-
-                    {searchProduct.map((dat) => (
-                        <div key={dat.id} href="#" class="card">
-                            <img src={dat.image} alt="..." className='card__img' />
-                            <span class="card__footer">
-                                <span>{dat.name}</span>
-                                <span>{dat.species}</span>
-                            </span>
-                            <span class="card__action">
-                                <a href="#">
-                                    <span class="material-symbols-outlined">
-                                        visibility
-                                    </span>
-                                </a>
-                            </span>
-                        </div>
-                    ))} */}
-
-
-
+                    
                     {/* new card  */}
 
                     {(loadChatacter == 0) &&
@@ -134,7 +98,47 @@ export const PageSearch = () => {
                         ))
                     }
 
+                    {searchRick.map((dat) => (
+                        <article class="card">
+                            <img
+                                class="card__background"
+                                src={dat.image}
+                                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                                width="1920"
+                                height="2193"
+                            />
+                            <div class="card__content | flow">
+                                <div class="card__content--container | flow">
+                                    <h2 class="card__title">{dat.name}</h2>
+                                    <p class="card__description">
+                                        {dat.species}
+                                    </p>
+                                </div>
+                                <button class="card__button">View</button>
+                            </div>
+                        </article>
+                    ))}
 
+                    {searchProduct.map((dat) => (
+                        <article class="card">
+                            <img
+                                class="card__background"
+                                src={dat.image}
+                                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                                width="1920"
+                                height="2193"
+                            />
+                            <div class="card__content | flow">
+                                <div class="card__content--container | flow">
+                                    <h2 class="card__title">{dat.name}</h2>
+                                    <p class="card__description">
+                                        {dat.species}
+                                    </p>
+                                </div>
+                                <button class="card__button">View</button>
+                            </div>
+                        </article>
+                    ))}
 
                 </div>
             </div>
