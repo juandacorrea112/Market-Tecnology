@@ -6,7 +6,29 @@ export const PageRegister = () => {
     <div className='ContRegister'>
         <div className="lentRegister"></div>
 
-        <form className='FormRegister'>
+
+
+        <form>
+            <h2>New Account</h2>
+            <div className='inputBox'>
+                <input type="text" required/>
+                <label>Username</label>
+            </div>
+            <div className="inputBox">
+                <input type="password" required/>
+                <label>Create Password</label>
+            </div>
+            <div className="inputBox">
+                <input type="password" required/>
+                <label>Confirm Password</label>
+            </div>
+        </form>
+
+
+
+
+
+        {/* <form className='FormRegister'>
             <div className="contTittleRegister">
                 <h2>REGISTRO</h2>
             </div>
@@ -54,7 +76,7 @@ export const PageRegister = () => {
                 <button type='sumbit' className='BtnRegister'>CONFIRMAR</button>
             </div>
 
-        </form>
+        </form> */}
 
     </div>
   )
