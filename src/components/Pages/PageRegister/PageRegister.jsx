@@ -8,11 +8,15 @@ export const PageRegister = () => {
 
 
 
-        <form>
+        <form className='formRegister'>
             <h2>New Account</h2>
             <div className='inputBox'>
                 <input type="text" required/>
                 <label>Username</label>
+            </div>
+            <div className='inputBox'>
+                <input type="email" required/>
+                <label>Email</label>
             </div>
             <div className="inputBox">
                 <input type="password" required/>
@@ -22,6 +26,10 @@ export const PageRegister = () => {
                 <input type="password" required/>
                 <label>Confirm Password</label>
             </div>
+            <div className="inputBox">
+                <input type="sumbit" value="Create"/>
+            </div>
+            <p>Alreadey have account ? <a href="#">Login</a></p>
         </form>
 
 
