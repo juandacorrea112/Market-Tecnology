@@ -67,14 +67,28 @@
     letter-spacing: 0.15em;
 }
 
-.inputBox label {
+.inputBox #labelUp {
     position: absolute;
     left: 0;
     padding: 10px 0;
     pointer-events: none;
-    color: #999;
+    color: var(--text-color);
     text-transform: uppercase;
 }
+.inputBox #labelUp span{
+    position: relative;
+    display: inline-flex;
+    letter-spacing: 0.05em;
+    transition: 0.2s ease-in-out;
+}
+.inputBox .inputinterB:focus ~ #labelUp span,
+.inputBox .inputinterB:valid ~ #labelUp span
+{
+    color: var(--main-color);
+    letter-spacing: 0.15em;
+    transform: translateY(-25px);
+}
+
 .inputBox .inputinterB:focus,
 .inputBox .inputinterB:valid {
     border-bottom: 2px solid var(--main-color);
