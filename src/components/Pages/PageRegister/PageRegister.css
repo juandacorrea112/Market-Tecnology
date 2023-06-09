@@ -21,111 +21,10 @@
     align-items: center;
 }
 .ContRegister .lentRegister{
+    background-color: rgba(0, 0, 0, 0.841);
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.841);
-}
-.FormRegister{
-    position: relative;
-    width: 600px;
-    height: 600px;
-    background: #1c1c1c;
-    border-radius: 8px;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-    border: 3px solid var(--main-color);
-}
-.contTittleRegister{
-    color: #fff;
-    font-size: 35px;
-}
-.contDivsInputs{
-    width: 100%;
-    height: auto;
-    display: flex;
-}
-.ContsNames{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.inputBoxR{
-    position: relative;
-    width: 250px;
-}
-.inputBoxR .EmailRe{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid rgb(255, 255, 255, 0.25);
-    background: #1c1c1c;
-    border-radius: 5px;
-    outline: 5px;
-    color: #fff;
-    font-size: 1em;
-    transition: 0.5s;
-}
-.inputBoxR .EmailR{
-    position: absolute;
-    left: 0;
-    padding: 10px;
-    pointer-events: none;
-    font-size: 1em;
-    color: rgba(255, 255, 255, 0.25);
-    text-transform: uppercase;
-    transition: 0.5s;
-}
-.inputBoxR .EmailRe:valid ~ .EmailR,
-.inputBoxR .EmailRe:focus ~ .EmailR
-{
-    color: rgb(93 24 220);
-    transform: translateX(10px) translateY(-7px);
-    font-size: 0.65em;
-    padding: 0 10px;
-    background: #1c1c1c;
-    border-left: 1px solid rgb(93 24 220);
-    border-right: 1px solid rgb(93 24 220);
-    letter-spacing: 0.2em;
-}
-
-.ContPasswords{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-/*===========button register===========*/
-.BtnRegister{
-    padding: 17px 40px;
-    border-radius: 50px;
-    border: 0;
-    background-color: white;
-    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-size: 15px;
-    transition: all .5s ease;
-    cursor: pointer;
-}
-.BtnRegister:hover{
-    letter-spacing: 3px;
-    background-color: var(--main-color);
-    color: var(--bg-color);
-    box-shadow: var(--main-color) 0px 7px 29px 0px;
-}
-.BtnRegister:active{
- letter-spacing: 3px;
- background-color: hsl(261deg 80% 48%);
- color: hsl(0, 0%, 100%);
- box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
- transform: translateY(10px);
- transition: 100ms;
 }
 
 
@@ -137,21 +36,24 @@
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    z-index: 1;
 }
-.formRegister h2 {
+.formRegister h1 {
+    text-align: center;
     color: var(--text-color);
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 1.25em;
+    font-size: 2.25em;
     letter-spacing: 0.1em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .inputBox {
     position: relative;
     width: 300px;
     margin-bottom: 40px;
 }
-.inputBox input {
+.inputBox .inputinterB {
+    border: none;
     position: relative;
     width: 100%;
     padding: 10px 0;
@@ -159,4 +61,48 @@
     border: none;
     border-bottom: 2px solid #999;
     outline: none;
+    color: var(--text-color);
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    color: #999;
+    text-transform: uppercase;
+}
+.inputBox .inputinterB:focus,
+.inputBox .inputinterB:valid {
+    border-bottom: 2px solid var(--main-color);
+}
+.inputBox .inputinterB[type="sumbit"] {
+    background-color: var(--main-color);
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    color: #1c2630;
+    font-weight: 600;
+    font-size: 1.15em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.inputBox .inputinterB[type="sumbit"]:hover {
+    letter-spacing: 0.35em;
+}
+.formRegister p {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+}
+.formRegister p a {
+    color: var(--main-color);
+    font-weight: 500;
+    text-decoration: none;
 }
