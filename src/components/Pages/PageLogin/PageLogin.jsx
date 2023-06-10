@@ -35,7 +35,7 @@ export const PageLogin = () => {
 
           <button className='inputinterL' type="sumbit">Create</button>
         </div>
-        <p>Alreadey have account ? <a href="/Login">Login</a></p>
+        <p> Don't have an account yet?  <a href="/Registro"> Register</a></p>
       </form>
     </div>
   )
