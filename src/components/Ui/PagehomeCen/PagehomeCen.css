@@ -22,15 +22,18 @@
     font-size: 4.5rem;
 }
 .about-content h2 {
+    font-family: 'Chakra Petch';
     text-align: left;
     line-height: 1.2;
 }
 
 .about-content h3 {
+    font-family: 'Chakra Petch';
     font-size: 2.6rem;
 }
 
 .about-content p {
+    font-family: 'Chakra Petch';
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
