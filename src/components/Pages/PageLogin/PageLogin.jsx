@@ -1,27 +1,41 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './PageLogin.css'
 
 export const PageLogin = () => {
+
+
+  useEffect(() => {
+    let label = document.querySelectorAll('#labelUpL').forEach(label => {
+      label.innerHTML = label.innerText.split('').map((letters, i) => `<span style="transition-delay: ${i * 50
+        }ms">${letters}</span>`).join('')
+    })
+  }, [])
+
+
+
   return (
-    <div className="ContLogin">
-      <div className="lentLogin"></div>
-      <form className='FormLogin'>
-        <div className="contTittleLogin">
-          <h2>Login</h2>
+    <div className='ContRegister'>
+      <div className="lentRegister"></div>
+
+
+
+      <form className='formLogin'>
+        <h1>Login</h1>
+
+        <div className='inputBoxL'>
+          <input className='inputinterL' type="email" required />
+          <label id='labelUpL'>Email</label>
         </div>
 
-        <div className="inputBox">
-          <input type="email" required />
-          <span>Correo</span>
+        <div className="inputBoxL">
+          <input id='inputinterL' className='inputinterL' type="password" required />
+          <label id='labelUpL'>Password</label>
         </div>
-        
-        <div className="inputBox">
-          <input type="password" required />
-          <span>Contraseña</span>
+        <div className="inputBoxL">
+
+          <button className='inputinterL' type="sumbit">Create</button>
         </div>
-
-        <button type='sumbit' className='BtnFLogin'>ENTRAR</button>
-
+        <p>Alreadey have account ? <a href="/Login">Login</a></p>
       </form>
     </div>
   )
