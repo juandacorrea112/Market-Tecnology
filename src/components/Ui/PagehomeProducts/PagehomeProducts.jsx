@@ -66,60 +66,7 @@ export const PagehomeProducts = () => {
                                 <a href="#"><i class='bx bx-link-external'></i></a>
                             </div>
                         </div>
-
                     ))}
-
-
-
-                    {/* <div className="portfolio-box">
-                        <img src={pcMack} alt={pcMack} />
-                        <div className="portfolio-layer">
-                            <h4>Web Desing</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo assumenda non error, temporibus, ducimus consequuntur itaque laudantium nulla laborum, dicta laboriosam nesciunt ipsam magni voluptas.
-                                A voluptatum soluta dicta dolorem.</p>
-                            <a href="#"><i class='bx bx-link-external'></i></a>
-                        </div>
-                    </div>
-
-                    <div className="portfolio-box">
-                        <img src={ctUppc} alt={ctUppc} />
-                        <div className="portfolio-layer">
-                            <h4>Web Desing</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo assumenda non error, temporibus, ducimus consequuntur itaque laudantium nulla laborum, dicta laboriosam nesciunt ipsam magni voluptas.
-                                A voluptatum soluta dicta dolorem.</p>
-                            <a href="#"><i class='bx bx-link-external'></i></a>
-                        </div>
-                    </div>
-
-                    <div className="portfolio-box">
-                        <img src={pcProductoVenta} alt={pcProductoVenta} />
-                        <div className="portfolio-layer">
-                            <h4>Web Desing</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo assumenda non error, temporibus, ducimus consequuntur itaque laudantium nulla laborum, dicta laboriosam nesciunt ipsam magni voluptas.
-                                A voluptatum soluta dicta dolorem.</p>
-                            <a href="#"><i class='bx bx-link-external'></i></a>
-                        </div>
-                    </div>
-
-                    <div className="portfolio-box">
-                        <img src={pcMack} alt={pcMack} />
-                        <div className="portfolio-layer">
-                            <h4>Web Desing</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo assumenda non error, temporibus, ducimus consequuntur itaque laudantium nulla laborum, dicta laboriosam nesciunt ipsam magni voluptas.
-                                A voluptatum soluta dicta dolorem.</p>
-                            <a href="#"><i class='bx bx-link-external'></i></a>
-                        </div>
-                    </div>
-
-                    <div className="portfolio-box">
-                        <img src={ctUppc} alt={ctUppc} />
-                        <div className="portfolio-layer">
-                            <h4>Web Desing</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo assumenda non error, temporibus, ducimus consequuntur itaque laudantium nulla laborum, dicta laboriosam nesciunt ipsam magni voluptas.
-                                A voluptatum soluta dicta dolorem.</p>
-                            <a href="#"><i class='bx bx-link-external'></i></a>
-                        </div>
-                    </div> */}
                 </div>
             </section>
         </>

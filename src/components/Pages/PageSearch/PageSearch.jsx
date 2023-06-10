@@ -1,16 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { getAllProducts } from '../../../Helpers/getAllProducts'
 
-// import calularProducto from '../../../images/productos/calularProducto.jpg'
-// import ctUppc from '../../../images/productos/ctUppc.jpg'
-// import pcProductoVenta from '../../../images/productos/pcProductoVenta.jpg'
-// import cellProducto from '../../../images/productos/cellProducto.jpg'
-// import dobolWindow from '../../../images/productos/dobolWindow.jpg'
-// import pcMack from '../../../images/productos/pcMack.jpg'
 
 import './PageSearch.css'
-import { data } from 'jquery'
-// import { error } from 'jquery'
+
 
 export const PageSearch = () => {
 
@@ -94,7 +87,6 @@ export const PageSearch = () => {
                                     <button class="card__button">View</button>
                                 </div>
                             </article>
-
                         ))
                     }
 
@@ -139,7 +131,6 @@ export const PageSearch = () => {
                             </div>
                         </article>
                     ))}
-
                 </div>
             </div>
         </div>
