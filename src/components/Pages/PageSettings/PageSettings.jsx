@@ -36,6 +36,10 @@ export const PageSettings = () => {
         setSettinginformation(4)
     }
 
+    function Changeupproduct() {
+        setSettinginformation(5)
+    }
+
 
 
     return (
@@ -64,6 +68,9 @@ export const PageSettings = () => {
                         </div>
                         <div onClick={Changeemail} className="changeDates">
                             <h3>Email</h3>
+                        </div>
+                        <div onClick={Changeupproduct} className="changeDates">
+                            <h3>Upload product</h3>
                         </div>
                     </div>
                 </div>
@@ -149,6 +156,20 @@ export const PageSettings = () => {
                                     <form>
                                         <input className='inputBoxdata' type="email" required id="placeholder-input" placeholder="Email" onblur="setPlaceholder(this)" />
                                         <input className='inputBoxdata' type="email" required id="placeholder-input" placeholder="Confirm email" onblur="setPlaceholder(this)" />
+                                        <div className="contButtonS">
+                                            <button>Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        }
+
+                        {(settinginformation == 5) &&
+                            <div className="conSubdata">
+                                <h3>Upload product:</h3>
+                                <div className="contBoxdatas">
+                                    <form>
+                                        
                                         <div className="contButtonS">
                                             <button>Save</button>
                                         </div>
