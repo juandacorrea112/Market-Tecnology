@@ -168,8 +168,12 @@ export const PageSettings = () => {
                             <div className="conSubdata">
                                 <h3>Upload product:</h3>
                                 <div className="contBoxdatas">
-                                    <form>
-                                        
+                                    <form className='formUpfichers'>
+                                        <div class="custom-input-file col-md-6 col-sm-6 col-xs-6">
+                                            <input type="file" className='input-file' id='fichero-tarifas' />
+                                            Product...
+                                        </div>
+                                        <textarea name="" id="" cols="30" rows="10" placeholder='some description...' className='textDescription'></textarea>
                                         <div className="contButtonS">
                                             <button>Save</button>
                                         </div>
@@ -177,10 +181,8 @@ export const PageSettings = () => {
                                 </div>
                             </div>
                         }
-
                     </div>
                 </div>
-
             </div>
         </div>
     )
