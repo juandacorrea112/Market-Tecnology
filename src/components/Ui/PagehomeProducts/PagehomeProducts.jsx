@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { fetchData } from '../../../Helpers/getAllProducts'
+import { getAllpost } from '../../../Helpers/getAllProducts'
 import ScrollReveal from 'scrollreveal'
 import pcMack from '../../../images/productos/pcMack.jpg'
 import ctUppc from '../../../images/productos/ctUppc.jpg'
@@ -9,6 +10,10 @@ import './PagehomeProducts.css'
 
 export const PagehomeProducts = () => {
 
+    // use state de la appi del backend 
+    const [datback, setDatback] = useState([])   
+
+    // use state de prueba
     const [character, setCharacter] = useState([])
 
 
@@ -27,6 +32,15 @@ export const PagehomeProducts = () => {
                 console.log('Error: ', error);
             })
         console.log(character);
+
+        //obtenemos datos de la api del backend
+        async function loadPost() {
+            const res = await getAllpost()
+            setDatback(res.data)
+        }
+        loadPost()
+        console.log(datback);
+        
     }, [])
 
 
