@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { useForm } from 'react-hook-form';
 import './PageRegister.css'
 
 export const PageRegister = () => {
