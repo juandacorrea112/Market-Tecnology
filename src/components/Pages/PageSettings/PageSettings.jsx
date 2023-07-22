@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react'
+import { useForm } from 'react-hook-form';
 import girlProfile from '../../../images/perfiles/girlProfile.jpg'
 import './PageSettings.css'
 
+
 export const PageSettings = () => {
+
+    const {register, handleSubmit, formState: {
+        errors
+    }} = useForm()
 
     const [settinginformation, setSettinginformation] = useState()
 
@@ -40,6 +46,9 @@ export const PageSettings = () => {
         setSettinginformation(5)
     }
 
+    const onSumbit = handleSubmit(data => {
+        console.log(data);
+    })
 
 
     return (
@@ -168,12 +177,15 @@ export const PageSettings = () => {
                             <div className="conSubdata">
                                 <h3>Upload product:</h3>
                                 <div className="contBoxdatas">
-                                    <form className='formUpfichers'>
+                                    <form onSubmit={onSumbit} className='formUpfichers'>
                                         <div class="custom-input-file col-md-6 col-sm-6 col-xs-6">
                                             <input type="file" className='input-file' id='fichero-tarifas' />
                                             Product...
                                         </div>
-                                        <textarea name="" id="" cols="30" rows="10" placeholder='some description...' className='textDescription'></textarea>
+                                        <textarea name="" id="" cols="30" rows="10" placeholder='some description...' className='textDescription'
+                                            {...register("description", {required: true})}
+                                        ></textarea>
+                                        {errors.description && <span>this description is required</span>}
                                         <div className="contButtonS">
                                             <button>Save</button>
                                         </div>

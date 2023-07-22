@@ -13,6 +13,7 @@ export const PageRegister = () => {
         })
     },[])
 
+    const {register} = useForm()
 
   return (
     <div className='ContRegister'>
