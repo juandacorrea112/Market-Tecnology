@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form';
+import { createPost } from '../../../Helpers/getAllProducts';
 import girlProfile from '../../../images/perfiles/girlProfile.jpg'
 import './PageSettings.css'
 
@@ -46,8 +47,10 @@ export const PageSettings = () => {
         setSettinginformation(5)
     }
 
-    const onSumbit = handleSubmit(data => {
-        console.log(data);
+    // enviar valores a la api
+    const onSumbit = handleSubmit(async data => {
+        const res = await createPost(data)
+        console.log(res);
     })
 
 
